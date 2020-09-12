@@ -1,1 +1,24 @@
-
+<html>
+  <head>
+	<title>Ethan Son</title>
+  </head>
+  <body>
+	<h3>Introducing Ethan Son</h3>
+	<br>
+	<hr>
+	<p>My name is Ethan Son. I am 13 years old. I was born on September 22, 2006. I live in Sugar Hill, Georgia. I go to North Gwinnett Middle School.</p>
+	<p>I have a dog. Her name is Dubu. I also have one younger brother. His name is Dylan. I have played the violin for 7 years. I am korean. I have a fear of heights. </p> 
+	<p>Accomplishments</p>
+	<ul>
+	<li>Got into AllState Orchestra</li>
+	<li>Always gets straight A's for school</li>
+	<li>Got chair for the Kendall Orchestra</li>
+	</ul>
+	<p>Best Life Moments</p>
+	<ol>
+	<li>Getting Dubu(my dog)</li>
+	<li>Playing violin</li>
+	<li>Moving and meeting my best friend</li>
+	</ol>
+  </body>
+</html>
