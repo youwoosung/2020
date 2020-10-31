@@ -1,0 +1,60 @@
+
+     <script>
+
+     var birthday = "November 14th, 2006";
+     var myAge = 13
+     var question = "How long would it take for me to become 20?";
+     var twenty = 20;
+     var result = "It would take me 7 years for me to become 20";
+
+     alert(birthday);
+     alert(myAge);
+     alert(question);
+     alert(twenty - myAge);
+
+   myAge = myAge + 1;
+
+     alert(myAge);
+     alert(question);
+     alert(twenty - myAge);
+
+   myAge = myAge + 1;
+
+     alert(myAge);
+     alert(question);
+     alert(twenty - myAge);
+
+   myAge = myAge + 1; 
+
+     alert(myAge);
+     alert(question);
+     alert(twenty - myAge);
+
+   myAge = myAge + 1; 
+
+     alert(myAge);
+     alert(question);
+     alert(twenty - myAge);
+
+   myAge = myAge + 1;
+
+     alert(myAge);
+     alert(question);
+     alert(twenty - myAge);
+
+   myAge = myAge + 1;
+
+     alert(myAge);
+     alert(question);
+     alert(twenty - myAge);
+
+   myAge = myAge + 1; 
+
+     alert(myAge);
+     alert(question);
+     alert(twenty - myAge);
+     confirm(result);
+     
+     </script>
+
+    </head>
