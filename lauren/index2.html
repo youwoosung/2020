@@ -2,27 +2,33 @@
   <head>
     <title>Javascript Practice</title>
     <script>
-     var var1 = "Earbuds";
-     var var2 = "Glasses";
-     var var3 = 33;
-     var var4 = 15;
-     var var5 = (var2 == var3);
+     var presidentName = "Joe Biden";
+     var worstPresident = "Donald Trump";
+     var bidenAge = 77;
+     var trumpAge = 74;
+     var bidenOlder = (bidenAge > trumpAge);
+     var var5 = (bidenAge == trumpAge);
      
-     var answer = var1 + var2;
-     alert(typeof answer);
-     alert(answer)
+     var answer = prompt("Enter the name of the President elected in 2020.");
+     alert(presidentName);
      
-     var answer = var1 + var4;
-     alert(typeof answer);
-     alert(answer)
+     var answer = prompt("What is presidentName + bidenAge?");
+     alert(presidentName + bidenAge);
      
-     var answer = var3 + var4;
-     alert(typeof answer);
-     alert(answer)
+     var answer = prompt("What is presidentName + worsePresident");
+     alert(presidentName + worstPresident);
      
-     var answer = var1+ var5;
-     alert(typeof answer);
-     alert(answer)
+     var answer = prompt("How old is Joe Biden?");
+     alert(bidenAge);
+     
+     var answer = prompt("How old is Trump?");
+     alert(trumpAge);
+     
+     var answer = prompt("What is Trump's age + Biden's age?");
+     alert(bidenAge + trumpAge);
+     
+     var answer = prompt("True or False. Biden and Trump are the same age.");
+     alert(var5);
     </script>
       <body>
     <h3>Javascript is cool</h3>
