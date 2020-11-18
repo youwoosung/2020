@@ -5,31 +5,25 @@
      
      <script>
      
-  var presidentName = "Joe Biden";
-  var assassinedTwo = "John F. Kennedy";
-  var assassinedOne = "Abraham Lincoln";
-  var bidenAge = 77;
-  var trumpAge = 74;
-  var bidenOlder = (bidenAge > trumpAge);
+  
+  var firstStr = prompt("Enter any number");
+  var secondStr = prompt("Enter another number");
+  
+  alert(parseInt(firstStr) + parseInt(secondStr));
+  
+  prompt("What do you think the answer would be for parseInt('38.42') + 18?");
+  alert(parseInt("38.42") + 18);
+  
+  var num1 = 15 / 3 * 8;
+  prompt("What do you think the answer would be for 15 / 3 * 8 + parseFloat('12.62')")
+  alert(num1 + parseFloat("12.62"));
+  
+  var num2 = (47 % 7) * 9;
+  prompt("What do you think the answer would be for (47 % 7) * 9 + parseInt('13.68') - parseFloat('8.62')");
+  alert(num2 + parseInt("13.68") - parseFloat("8.62"));
 
+    
   
-  var answer = prompt("Enter the name of the president elected in 2020.");
-  alert(answer == presidentName);
-  
-  var difference = prompt("What is the difference between Biden and Trump's age??");
-  alert(bidenAge - trumpAge);
-  
-  var info = presidentName + bidenAge;
-  prompt("What would presidentName + bidenAge display?");
-  alert(info);
-  
-  prompt("Who was the 2 most known president who got assassinated?");
-  alert(assassinedOne + " and " + assassinedTwo);
-
-  prompt("Is Biden's age older or trump's age older?");
-  alert("Biden is older and it is " + bidenOlder);
-  
-   
      </script>
      
     </head>
