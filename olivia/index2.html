@@ -2,36 +2,30 @@
   <head>
     <title>Javascript</title>
     <script>
-    	var myName = "Olivia.";
-    	var myAge = "14 years old";
-		var activities = " I play the cello, piano, and play tennis."
-		
-		var bidenAge = 77;
-		var trumpAge = 74;
-		var presidentName = "Joe Biden";
-		var boolean = bidenAge > trumpAge;
-		var presidentsAgeSum = "Biden's age is " + 77 + " and Trump's age is " + 74 + " and the sum of their ages is " + (77 + 74);
-		
-		var greeting = "Hello my name is " + myName + activities + " I am also " + myAge + ":)";
-		
-		alert(greeting);
-		alert(typeof greeting);
-		alert((Biden is older than Trump) + boolean);
-		
-		var answer = bidenAge + trumpAge;
-		alert(typeof answer);
-		alert(answer);
-		alert(presidentsAgeSum);
-		
-		
-		var answer = bidenAge - trumpAge;
-		alert(typeof answer);
-		alert(answer);
+     
+     var firstStr = prompt("Enter a number");
+     var secondStr = prompt("Enter another number");
+     var intFirst = parseInt(firstStr);
+     var intSecond = parseInt(secondStr);
+     var questionOne = prompt("What are the two numbers you put in added together equal to?");
+     var intOne = parseInt(questionOne);
+     var correctSum= intFirst + intSecond;
+     
+     alert(intOne == correctSum);
+	 
+	 var questionTwo = prompt("What is the answer to (81+9)/3%4?");
+	 var intTwo = parseInt(questionTwo);
+	 var correctSum = (81+9)/3%4;
+	 
+	 alert(intTwo == correctSum);
+	 
+	 var questionThree = prompt("What is 5.15 + 2.23 + 1584.523?");
+	 var floatOne = parseFloat(questiontThree);
+	 var correctSum = 5.15 + 2.23 + 1584.523;
+	 var floatTwo = parseFloat(correctSum);
 
-		var answer = presidentName + bidenAge;
-		alert(typeof answer);
-		alert(answer);
-		
+	 alert("hello");
+
     </script>
   </head>
   <body>
