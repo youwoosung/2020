@@ -2,34 +2,19 @@
 	<head>
 		<title>Javascript Practice</title>
 		<script>
-		var presidentName = "Joe Biden";
-		var bidenAge = 77;
-		var name = "Donald Trump";
-		var trumpAge = 74;
-		var presidentTerm = 4;
-		var electionYear = 2020;
-		var bidenPopularity = 2471996;
-		var trumpPopularity = 2457880;
-		var bidenPopular = (bidenPopularity > trumpPopularity);
+		var firstStr = prompt("Enter one number");
+		var secondStr = prompt("Enter another number");
+		var oneEquation = (21 * 7) / 3 + 25;
+		var twoEquation = (56 / 8) * 4 - 9;
 		
-		prompt("Who were the 2020 Presidential Election candidates?");
-		alert(presidentName + " and " + name);
+		prompt("What would be the difference between the numbers you entered?");
+		alert(parseInt(firstStr) - parseInt(secondStr));
 		
-		var result = prompt("Who won the 2020 Presidential Election?");
-		alert(presidentName);
+		prompt("What is the answer to (21 * 7) / 3 + 25 - parseInt(14.64) % 2?");
+		alert(oneEquation - parseInt(14.64) % 2);
 		
-		var result = prompt("How old will Joe Biden be after he serves one term as president?");
-		alert(bidenAge + presidentTerm);
-		
-		var result = prompt("What is the difference between Trump and Biden's age?");
-		alert(bidenAge - trumpAge);
-		
-		var result = presidentName + electionYear;
-  		prompt("What would presidentName + electionYear show?");
-  		alert(result);
-  		
-  		prompt("Is Biden more popular in Georgia or is Trump more popular in Georgia?");
-  		alert("Biden is more popular in Georgia and it is " + bidenPopular);
+		prompt("What is the answer to (56 / 8) * 4 - 9 + parseFloat(34.87) % 4?");
+		alert(twoEquation + parseFloat(34.87) % 4);
   		</script>
 	</head>
 	<body>
