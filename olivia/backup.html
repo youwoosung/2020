@@ -49,6 +49,35 @@
 		var answer = presidentName + bidenAge;
 		alert(typeof answer);
 		alert(answer);
+	    	
+	    	     var firstStr = prompt("Enter a number");
+     		var secondStr = prompt("Enter another number");
+     		var intFirst = parseInt(firstStr);
+     		var intSecond = parseInt(secondStr);
+     		var questionOne = prompt("What are the two numbers you put in added together equal to?");
+     		var intOne = parseInt(questionOne);
+     		var correctSum= intFirst + intSecond;
+     		var answer = "The correct answer is " + correctSum;
+     
+     alert(intOne == correctSum);
+	 alert(answer);
+	 
+	 var questionTwo = prompt("What is the answer to (81+9)/3%4?");
+	 var intTwo = parseInt(questionTwo);
+	 var correctSum = (81+9)/3%4;
+	 var answer = "The correct answer is " + correctSum;
+	 
+	 alert(intTwo == correctSum);
+	 alert(answer);
+	 
+	 var questionThree = prompt("What is the answer to 2.3 + 5.3 + 10.235?");
+	 var floatOne = parseFloat(questionThree);
+	 var correctSum = 2.3 + 5.3 + 10.235;
+	 var floatTwo = parseFloat(correctSum);
+	 var answer = "The correct answer is " + correctSum;	 
+	 
+	 alert(floatOne == floatTwo);
+	 alert(answer);
     </script>
   </head>
   <body>
