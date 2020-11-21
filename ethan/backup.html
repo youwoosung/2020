@@ -26,6 +26,10 @@
 		var bidenPopularity = 2471996;
 		var trumpPopularity = 2457880;
 		var bidenPopular = (bidenPopularity > trumpPopularity);
+		var firstStr = prompt("Enter one number");
+		var secondStr = prompt("Enter another number");
+		var oneEquation = (21 * 7) / 3 + 25;
+		var twoEquation = (56 / 8) * 4 - 9;
 			
 		alert(typeof var1);
 		alert(typeof var2);
@@ -103,6 +107,15 @@
   		
   		prompt("Is Biden more popular in Georgia or is Trump more popular in Georgia?");
   		alert("Biden is more popular in Georgia and it is " + bidenPopular);
+			
+		prompt("What would be the difference between the numbers you entered?");
+		alert(parseInt(firstStr) - parseInt(secondStr));
+		
+		prompt("What is the answer to (21 * 7) / 3 + 25 - parseInt(14.64) % 2?");
+		alert(oneEquation - parseInt(14.64) % 2);
+		
+		prompt("What is the answer to (56 / 8) * 4 - 9 + parseFloat(34.87) % 4?");
+		alert(twoEquation + parseFloat(34.87) % 4);
 		</script>
 	</head>
 	<body>
