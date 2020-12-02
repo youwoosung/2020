@@ -1,11 +1,7 @@
 <html>
   <head>
     <title>Javascript</title>
-    <script>
-   
-     var greeting = prompt("My name is Olivia. What is your name?");
-     var testTime = confirm("Nice to meet you " + greeting + ". Are you ready to take the test?");   
-        	
+    <script>    	
      	
      var firstStr = prompt("Enter a number");
      var secondStr = prompt("Enter another number");
@@ -20,16 +16,16 @@
          alert(answer);
      }
      if else(intOne > correctSum) {
-         alert(Wrong answer. Go a bit lower);
+         prompt("Wrong answer. Go a bit lower");
      }
      if else(intOne < correctSum) {
-         alert(Wrong answer. Go a bit higher);
+         prompt("Wrong answer. Go a bit higher");
      }
      if else(intOne < 0) {
-         alert(Wrong answer. This number is not a negative or decimal number.);
+         prompt("Wrong answer. This number is not a negative or decimal number.");
 	 }
 	 else{
-	     alert("Your answer is invalid");
+	     prompt("Your answer is invalid");
 	 }
 	 
 	 var questionTwo = prompt("What is the answer to (81+9)/3%4?");
@@ -41,13 +37,13 @@
 	     alert(answer);
 	 }
 	 if else(intTwo != correctSum) {
-	     alert("Wrong answer. Try again");
+	     prompt("Wrong answer. Try again");
 	 }
-	 if else(intTwo = x/2 = 1) {
-	     alert("Wrong answer. This number is an even number.");
+	 if else(intTwo/2=1 && intTwo != correctSum) {
+	     prompt("Wrong answer. This number is a whole number");
 	 }
 	 else{
-	     alert("Your answer is invalid");
+	     prompt("Your answer is invalid");
 	 	 
 	 var questionThree = prompt("What is the answer to 2.3 + 5.3 + 10.235?");
 	 var floatOne = parseFloat(questionThree);
@@ -59,9 +55,9 @@
 	     alert(answer);
 	 }
 	 if(floatTwo > 10 && floatTwo < 20) {
-	     alert("Your answer is incorrect but in the right area :)");
+	     prompt("Your answer is incorrect but in the right area :)");
 	 }
-    
+     
     </script>
   </head>
   <body>
