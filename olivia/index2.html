@@ -2,18 +2,31 @@
   <head>
     <title>Javascript</title>
     <script>
+    
+     var greeting = prompt("My name is Olivia. What is your name?");
+     var testTime = prompt("Nice to meet you " + greeting + ". Are you ready to take the test?");   
+        	
+     	
+     var firstStr = prompt("Enter a number");
+     var secondStr = prompt("Enter another number");
+     var intFirst = parseInt(firstStr);
+     var intSecond = parseInt(secondStr);
+     var questionOne = prompt("What are the two numbers you put in added together equal to?");
+     var intOne = parseInt(questionOne);
+     var correctSum= intFirst + intSecond;
+     var answer = "The correct answer is " + correctSum);
      
-     	 var firstStr = prompt("Enter a number");
-     	 var secondStr = prompt("Enter another number");
-     	 var intFirst = parseInt(firstStr);
-     	 var intSecond = parseInt(secondStr);
-     	 var questionOne = prompt("What are the two numbers you put in added together equal to?");
-     	 var intOne = parseInt(questionOne);
-     	 var correctSum= intFirst + intSecond;
-     	 var answer = "The correct answer is " + correctSum;
+     if(x = correctSum)
+         alert(answer);
      
-     	 alert(intOne == correctSum);
-	 alert(answer);
+     if else(x > correctSum)
+         prompt(Wrong answer. Go a bit lower);
+         
+     if else(x < correctSum)
+         prompt(Wrong answer. Go a bit higher);
+         
+     if else(x < 0)
+         prompt(Wrong answer. This number is not a negative or decimal number.);
 	 
 	 var questionTwo = prompt("What is the answer to (81+9)/3%4?");
 	 var intTwo = parseInt(questionTwo);
