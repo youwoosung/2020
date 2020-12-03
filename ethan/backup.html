@@ -116,6 +116,27 @@
 		var twoEquation = (56 / 8) * 4 - 9;
 		prompt("What is the answer to (56 / 8) * 4 - 9 + parseFloat('34.87') % 4?");
 		alert(twoEquation + parseFloat('34.87') % 4);
+			
+		var number = prompt("Enter any number");
+		
+		if(number < 0) {
+			alert("Your number is a negative number");
+		}
+		else if(number >= 1 && number <= 100) {
+			alert("Your number is between 1 and 100");
+		}
+		else if(number >= 100 && number <= 1000) {
+			alert("Your number is between 100 and 1000");
+		}
+		else if(number >= 1000 && number <= 10000) {	
+			alert("Your number is between 1000 and 10000");
+		}
+		else if(number > 10000) {
+			alert("Your number is greater than 10000");
+		}
+		else{
+			alert("Your number is invalid");
+		}	
 		</script>
 	</head>
 	<body>
