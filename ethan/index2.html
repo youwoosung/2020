@@ -2,19 +2,26 @@
 	<head>
 		<title>Javascript Practice</title>
 		<script>
-		var firstStr = prompt("Enter one number");
-		var secondStr = prompt("Enter another number");
+		var number = prompt("Enter any number");
 		
-		prompt("What would be the difference between the numbers you entered?");
-		alert(parseInt(firstStr) - parseInt(secondStr));
-		
-		var oneEquation = (21 * 7) / 3 + 25;
-		prompt("What is the answer to (21 * 7) / 3 + 25 - parseInt('14.64') % 2?");
-		alert(oneEquation - parseInt('14.64') % 2);
-		
-		var twoEquation = (56 / 8) * 4 - 9;
-		prompt("What is the answer to (56 / 8) * 4 - 9 + parseFloat('34.87') % 4?");
-		alert(twoEquation + parseFloat('34.87') % 4);
+		if(number < 0) {
+			alert("Your number is a negative number");
+		}
+		else if(number >= 1 && number <= 100) {
+			alert("Your number is between 1 and 100");
+		}
+		else if(number >= 100 && number <= 1000) {
+			alert("Your number is between 100 and 1000");
+		}
+		else if(number >= 1000 && number <= 10000) {	
+			alert("Your number is between 1000 and 10000");
+		}
+		else if(number > 10000) {
+			alert("Your number is greater than 10000");
+		}
+		else{
+			alert("Your number is invalid");
+		}	
   		</script>
 	</head>
 	<body>
