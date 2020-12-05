@@ -77,8 +77,63 @@
 	 var answer = "The correct answer is " + correctSum;	 
 	 
 	 alert(floatOne == floatTwo);
-	 alert(answer);
-    </script>
+	  alert(answer);
+	         var firstStr = prompt("Enter a number");
+     var secondStr = prompt("Enter another number");
+     var intFirst = parseInt(firstStr);
+     var intSecond = parseInt(secondStr);
+     var questionOne = prompt("What are the two numbers you put in added together equal to?");
+     var intOne = parseInt(questionOne);
+     var correctSum= intFirst + intSecond;
+     var answer = "Good job! The correct answer is " + correctSum;
+     
+     if(intOne = correctSum) {
+         alert(answer);
+     }
+     if else(intOne > correctSum) {
+         alert("Wrong answer. Go a bit lower");
+     }
+     if else(intOne < correctSum) {
+         alert("Wrong answer. Go a bit higher");
+     }
+     if else(intOne < 0) {
+         alert("Wrong answer. This number is not a negative or decimal number.");
+	 }
+	 else{
+	     alert("Your answer is invalid");
+	 }
+	 
+	 var questionTwo = prompt("What is the answer to (81+9)/3%4?");
+	 var intTwo = parseInt(questionTwo);
+	 var correctSum = (81+9)/3%4;
+	 var answer = "Good job! The correct answer is " + correctSum;
+	 
+	 if(intTwo = correctSum) {
+	     alert(answer);
+	 }
+	 if else(intTwo != correctSum) {
+	     prompt("Wrong answer. Try again");
+	 }
+	 if else(intTwo/2=1 && intTwo != correctSum) {
+	     prompt("Wrong answer. This number is an even number");
+	 }
+	 else{
+	     prompt("Your answer is invalid");
+	 	 
+	 var questionThree = prompt("What is the answer to 2.3 + 5.3 + 10.235?");
+	 var floatOne = parseFloat(questionThree);
+	 var correctSum = 2.3 + 5.3 + 10.235;
+	 var floatTwo = parseFloat(correctSum);
+	 var answer = "Good job! The correct answer is " + correctSum;	 
+	 
+	 if(floatTwo = floatOne) {
+	     alert(answer);
+	 }
+	 if(floatTwo > 10 && floatTwo < 20 && floatTwo != correctSum) {
+	     prompt("Your answer is incorrect but in the right area :)");
+	 }  
+	    
+  </script>
   </head>
   <body>
     <h3>Javascript</h3>
