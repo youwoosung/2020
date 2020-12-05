@@ -2,20 +2,27 @@
   <head>
     <title>Javascript Practice</title>
     <script>
-      prompt("What is the expected result of: parseInt('24.34') + 9?");
-      alert(parseInt("24.34") + 9);
-  
-      var var1 = (10 * 2) / 4
-      prompt("What is the expected result of: (10 * 2) / 4 + parseInt('23.78') + parseInt('3.43')");
-      alert(var1 + parseInt('23.78') + parseInt('3.43'));
-  
-      var var2 = (4 / 2) + (89 % 9);
-      prompt("What is the expected result of: (4 / 2) + (89 % 9) + parseFloat('45.13') - parseInt('4.83')");
-      alert(var2 + parseFloat("45.13") - parseInt("4.83"));
-
-      var var3 = (4 * 5) - (58 % 8);
-      prompt("What is the expected result of: (4 * 5) - (58 % 8) + parseFloat('12.58') - parseFloat('8.29')");
-      alert(var3 + parseFloat('12.58') - parseFloat('8.29'));
+    var pick = prompt("Type any number");
+    
+    if(pick < 0) {
+       alert("It is a negative number!");
+    }
+    
+    else if(pick >= 1 && pick <= 100) {
+       alert("It is between 1 and 100!");
+    }
+    
+    else if(pick >= 100 && pick <= 1000) {
+       alert("It is between 100 and 1000!");
+    }
+    
+    else if(pick > 1000) {
+       alert("It is greater than 1000!");
+    }
+    
+    else {
+       alert("Invalid input!");
+    }
     </script>
       <body>
     <h3>Javascript is cool</h3>
