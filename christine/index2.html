@@ -4,24 +4,41 @@
      
      <script>
   
+   var x = parseInt("14");
      
-  var x = prompt("Pick a number of your choice");
- 
-  if(x < 0) {
-    alert("It is a negative number!!"); 
-  }
-  else if(x >= 0 && x <= 99) {
-    alert("It is between 0 and 99");
-  }  
-  else if(x >=100 && x <= 1000) {
-    alert("It is between 100 and 1000");
-  }  
-  else if(x > 1000) {
-    alert("It is greater than 1000!");
-  }  
-  else{
-    alert("It is invalid");
-  }
+   if(x % 2 == 0 ) {
+	    alert("This is an even number!");
+     }  
+	 if(x % 5 == 0 ) {
+	    alert("This is a multiple of 5!");
+	 }	
+	 if(x % 7 == 0 ) {
+	    alert("This is a multiple of 7!");
+	 }  
+	 if(x % 10 == 0 ) {
+	    alert("This is a multiple of 10!");
+	 }
+	 else if(x % 10 == 0 ) {
+	    alert("This is a multiple of 10!");
+   }
+	    
+	 var x = parseInt("25")
+	 
+     if(x % 2 == 0 ) {
+	    alert("This is an even number!");
+	 }   
+	 else if(x % 5 == 0) {
+	    alert("This is a multiple of 5!");
+	 }	
+	 else if(x % 7 == 0 ) {
+	    alert("This is a multiple of 7!");
+	 }   
+	 else if(x % 10 == 0 ) {
+	    alert("This is a multiple of 10!");
+   }
+   else{
+	    alert("This does not correspond to anything");
+   }
      </script>
      
     </head>
