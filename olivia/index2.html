@@ -2,73 +2,43 @@
   <head>
     <title>Javascript</title>
     <script>   	
-     	
-     var firstStr = prompt("Enter a number");
-     var secondStr = prompt("Enter another number");
-     var intFirst = parseInt(firstStr);
-     var intSecond = parseInt(secondStr);
-     var questionOne = prompt("What are the two numbers you put in added together equal to?");
-     var intOne = parseInt(questionOne);
-     var correctSum= intFirst + intSecond;
-     var answer = "Good job! The correct answer is " + correctSum;
-     
-     if(intOne > correctSum) {
-         alert("Wrong answer. Go lower. The correct answer is " + correctSum);
-     }
-     else if(intOne < correctSum) {
-         alert("Wrong answer. Go higher. The correct answer is " + correctSum);
-     }
-     else if(intOne < 0) {
-          alert("Wrong answer. This number is not a negative or decimal number. The correct answer is " + correctSum);
-     }
-     else if(intOne == correctSum) {
-          alert(answer);
-     }
-     else{
-         alert("Your answer is invalid.");
-     } 
-     var questionTwo = prompt("What is the answer to (81+9)/3%4?");
-     var intTwo = parseInt(questionTwo);
-     var correctSum = (81+9)/3%4;
-     var answer = "Good job! The correct answer is " + correctSum;
-	  
-     if(intTwo > 100 || intTwo < 0) {
-	     alert("Wrong answer. You are way off. The correct answer is 2.");
-	 }
-     else if(intTwo > correctSum) {
-         alert("Wrong answer. Go lower. The correct answer is 2");
-     }
-     else if(intTwo < correctSum) {
-         alert("Wrong answer. Go higher. The correct answer is 2");
-     }
-     else if(intTwo == correctSum) {
-         alert(answer);
-     }
-     else{
-         alert("Your answer is invalid");
-     }
-     var questionThree = prompt("What is the answer to 2.3 + 5.3 + 10.235?");
-     var floatOne = parseFloat(questionThree);
-     var correctSum = 2.3 + 5.3 + 10.235;
-     var floatTwo = parseFloat(correctSum);	 
-     var answer = "Good job! The correct answer is " + correctSum;
-	 
-     if(floatOne > 10 && floatTwo < 20) {
-	     alert("Your answer is incorrect but in the right area :). The correct answer is " + correctSum);
-	 }
-     else if(floatOne > correctSum) {
-	     alert("Wrong answer. Go lower. The correct answer is " + correctSum);
-	 }
-     else if(floatOne < correctSum) {
-	     alert("Wrong answer. Go higher. The correct answer is " + correctSum);
-	 }
-     else if(floatOne == correctSum) {
-	     alert(answer);
-	 }
-     else{
-	     alert("Your answer is invalid");
-	 }
-	 
+    	
+    var firstNum = prompt("Enter a number");
+    var allNum = "Your first number was ";
+    var firstInt = parseInt(firstNum);
+    
+    if(firstInt%2=1) {
+       alert("Your number is an odd number.");
+       allNum = allNum + "an odd number, ";
+    }
+    if(firstInt%2=0) {
+       alert("Your number is an even number.");
+       allNum = allNum + "an even number, ");
+    if(firstInt%3=0) {
+       alert("Your number is a multiple of 3.");
+       allNum = allNum + "a multiple of 3, ";
+    if(firstInt%10=0) {
+       alert("Your number is a multiple of 10.");
+       allNum = allNum + "a multiple of 10, ";
+   
+    var secondNum = prompt("Enter another number");
+    var secondInt = parseInt(secondNum);
+    
+    if(secondInt%2=0) {
+       alert("Your number is an even number.");
+       allNum = allNum + "and your second number is an even number.";
+    else if(secondInt%5=0)
+       alert("Your number is a multiple of 5.");
+       allNum = allNum + "and your second number is a multiple of 5.";
+    else if(secondInt%7=0)
+       alert("Your number is a multiple of 7.");
+       allNum = allNum + "and your second number is a multiple of 7.";
+    else if(secondInt%4=0)
+       alert("Your number is a multiple of 4.");
+       allNum = allNum + "and your second number is a multiple of 4.";
+    
+    alert(allNum);
+    
     </script>
   </head>
   <body>
