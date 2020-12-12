@@ -2,19 +2,47 @@
   <head>
     <title>Javascript Practice</title>
     <script>
-    var pick = prompt("Type any number");
-    
-    if(pick < 0) {
-       alert("It is a negative number!");
-    } else if(pick >= 1 && pick <= 100) {
-       alert("It is between 1 and 100!");
-    } else if(pick >= 100 && pick <= 1000) {
-       alert("It is between 100 and 1000!");
-    } else if(pick > 1000) {
-       alert("It is greater than 1000!");
-    } else {
-       alert("Invalid input!");
-    }
+    	var x = prompt("Enter a number");
+    	var numOne = parseInt(x);
+    	
+    	if(numOne % 2 == 0) {
+    		alert("This is an even number!");
+    	}
+    	
+    	if(numOne % 3 == 0) {
+    		alert("This is a multiple of 3!");
+    	}
+    	
+    	if(numOne % 5 == 0) {
+    		alert("This is a multiple of 5!");
+    	}
+    	
+    	if(numOne % 7 == 0) {
+    		alert("This is a multiple of 7!");
+    	}
+    	
+    	if(numOne % 10 == 0) {
+    		alert("This is a multiple of 10");
+    	}
+    	
+    	var x = prompt("Enter a number");
+    	var numTwo = parseInt(x);
+    	
+    	if(numTwo % 2 == 0) {
+    		alert("This is an even number, and I have to stop here. No more checking!");
+    	}
+    	
+    	else if(numTwo % 5 == 0) {
+    		alert("This is a multiple of 5, and I have to stop here. No more checking!");
+    	}
+    	
+    	else if(numTwo % 7 == 0) {
+    		alert("This is a multiple of 7, and I have to stop here. No more checking!");
+    	}
+    	
+    	else if(numTwo % 10 == 0) {
+    		alert("This is a multiple of 10, and I have to stop here. No more checking!");
+    	}
     </script>
       <body>
     <h3>Javascript is cool</h3>
