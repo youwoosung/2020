@@ -271,9 +271,9 @@
 	 var x = prompt("Pick a number");
 	 var Int = parseInt(x);
      
-     if(x % 2 == 0 ) {
+         if(x % 2 == 0 ) {
 	    alert("This is an even number!");
-     }  
+         }  
 	 if(x % 5 == 0 ) {
 	    alert("This is a multiple of 5!");
 	 }	
@@ -285,12 +285,12 @@
 	 }
 	 else{
 	    alert("This does not correspond to anything");
-     }
+         }
 	    
 	 var x = prompt("Pick a number");
 	 var Int = parseInt(x);
 	 
-     if(x % 2 == 0 ) {
+         if(x % 2 == 0 ) {
 	    alert("This is an even number!");
 	 }   
 	 else if(x % 5 == 0) {
@@ -301,11 +301,48 @@
 	 }   
 	 else if(x % 10 == 0 ) {
 	    alert("This is a multiple of 10!");
-     }
-     else{
+         }
+         else{
 	    alert("This does not correspond to anything");
-     }
+         }
 
+     	 var day = prompt("Pick a number");
+	 var Int = parseInt(day);
+	 
+	 switch(Int)
+	 {
+	 case 1: 
+	     alert("Todays is Monday");
+	     break;
+	     
+	 case 2: 
+	     alert("Todays is Tuesday");
+	     break;
+	 
+	 case 3: 
+	     alert("Todays is Wednesday");
+	     break;
+	 
+	 case 4: 
+	     alert("Todays is Thursday");
+	     break;
+	     
+	 case 5: 
+	     alert("Todays is Friday");
+	     break;
+	     
+	 case 6: 
+	     alert("Todays is Saturday");
+	     break;
+	     
+	 case 7: 
+	     alert("Todays is Sunday");
+	     break;
+	 
+	 default: 
+	     alert("invalid input");
+	     break;
+	 }
 	  
      </script>
      
