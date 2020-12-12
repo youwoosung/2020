@@ -132,7 +132,77 @@
 	 if(floatTwo > 10 && floatTwo < 20 && floatTwo != correctSum) {
 	     prompt("Your answer is incorrect but in the right area :)");
 	 }  
-	    
+	     var firstNum = prompt("Enter a number");
+    var allNum = "Your first number is ";
+    var firstInt = parseInt(firstNum);
+    
+    if(firstInt % 2 == 1) {
+       alert("This number is an odd number.");
+       allNum = allNum + "an odd number, ";
+    }
+    if(firstInt % 2 == 0) {
+       alert("This number is an even number.");
+       allNum = allNum + "an even number, ";
+    }
+    if(firstInt % 3 == 0) {
+       alert("This number is a multiple of 3.");
+       allNum = allNum + "a multiple of 3, ";
+    }
+    if(firstInt % 5 == 0) {
+       alert("This number is a multiple of 5");
+       allNum = allNum + "a multiple of 5, ";
+    }
+    if(firstInt % 10 == 0) {
+       alert("This number is a multiple of 10");
+       allNum = allNum + "a multiple of 10, ";
+    }
+    
+    var secondNum = prompt("Enter another number");
+    var secondInt = parseInt(secondNum);
+    
+    if(secondInt % 2 == 0) {
+       alert("Your number is an even number.");
+       allNum = allNum + "your second number is an even number, ";
+    }
+    else if(secondInt % 7 == 0) {
+       alert("Your number is a multiple of 7");
+       allNum = allNum + "your second number is a multiple of 7, ";
+    }
+    else if(secondInt >= 13 && firstInt < 20) {
+       alert("Your number is in the teens")
+       allNum = allNum + "your second number is in the teens, ";
+    }
+    else if(secondInt % 9 == 0) {
+       alert("Your number is a multiple of 9");
+       allNum = allNum + "your second number is a multiple of 9, ";
+    }
+    else if(secondInt % 5 == 0) {
+       alert("Your number is a multiple of 5");
+       allNum = allNum + "your second number is a multiple of 5, ";
+    }
+    else if(secondInt % 3 == 0) {
+       alert("Your second number is a multiple of 3");
+       allNum = allNum + "your second number is a multiple of 3, ";
+    }
+    
+    var firstDec = prompt("Enter a decimal number");
+    var firstFloat = parseFloat(firstDec);
+    
+    if(firstFloat < 0) {
+       alert("Your number is less than 0.");
+       allNum = allNum + "and your third number is less than 0.";
+    }
+    else if(firstFloat > firstInt) {
+       alert("Your number is greater than your first number.");
+       allNum = allNum + "and your third number is greater than your first number.";
+    }
+    else if(firstFloat > 0 && firstFloat < 10) {
+       alert("Your number is greater than 0 and less than 10.");
+       allNum = allNum + "and you third number is greater than 0 and less than 10.";
+    }
+    
+    alert(allNum);
+       
   </script>
   </head>
   <body>
