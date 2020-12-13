@@ -2,78 +2,73 @@
   <head>
     <title>Javascript</title>
     <script>   	
+ 
+    var userNum = prompt("Choose a number from 1 to 100. You will be scored based on how close your number is to mine. If you guess the number correctly you get 5 points!");
+    var userInt = parseInt(userNum);
+    var myNum = 63;
+    var myInt = parseInt(myNum);
+    var points = 0;
     
-    var firstNum = prompt("Enter a number");
-    var allNum = "Your first number is ";
-    var firstInt = parseInt(firstNum);
-    
-    if(firstInt % 2 == 1) {
-       alert("This number is an odd number.");
-       allNum = allNum + "an odd number, ";
+    if(userInt % 2 == 0) {
+       alert("Wrong! The correct answer is odd");
+       points = points - 1;
     }
-    if(firstInt % 2 == 0) {
-       alert("This number is an even number.");
-       allNum = allNum + "an even number, ";
+    if(userInt % 3 == 0) {
+       alert("Nice! The correct answer is a multiple of 3");
+       points = points + 1;
     }
-    if(firstInt % 3 == 0) {
-       alert("This number is a multiple of 3.");
-       allNum = allNum + "a multiple of 3, ";
+    if(userInt % 5 == 0) {
+       alert("Wrong! The correct answer is not a multiple of 5");
+       points = points - 1;
     }
-    if(firstInt % 5 == 0) {
-       alert("This number is a multiple of 5");
-       allNum = allNum + "a multiple of 5, ";
+    if(userInt % 7 == 0) {
+       alert("Nice! The correct answer is a multiple of 7");
+       points = points + 1;
     }
-    if(firstInt % 10 == 0) {
-       alert("This number is a multiple of 10");
-       allNum = allNum + "a multiple of 10, ";
+    if(userInt % 10 == 0) {
+       alert("Wrong! The correct answer is not a multiple of 10");
+       points = points - 1;
     }
-    
-    var secondNum = prompt("Enter another number");
-    var secondInt = parseInt(secondNum);
-    
-    if(secondInt % 2 == 0) {
-       alert("Your number is an even number.");
-       allNum = allNum + "your second number is an even number, ";
+    if(userInt == myNum) {
+       alert("Congratulations! You guessed the number correctly!");
+       points = points + 5;
     }
-    else if(secondInt % 7 == 0) {
-       alert("Your number is a multiple of 7");
-       allNum = allNum + "your second number is a multiple of 7, ";
-    }
-    else if(secondInt >= 13 && firstInt < 20) {
-       alert("Your number is in the teens")
-       allNum = allNum + "your second number is in the teens, ";
-    }
-    else if(secondInt % 9 == 0) {
-       alert("Your number is a multiple of 9");
-       allNum = allNum + "your second number is a multiple of 9, ";
-    }
-    else if(secondInt % 5 == 0) {
-       alert("Your number is a multiple of 5");
-       allNum = allNum + "your second number is a multiple of 5, ";
-    }
-    else if(secondInt % 3 == 0) {
-       alert("Your second number is a multiple of 3");
-       allNum = allNum + "your second number is a multiple of 3, ";
+    if(userInt != myNum) {
+       alert("Wrong! The correct answer was " + myNum);
+       points = points - 5;
     }
     
-    var firstDec = prompt("Enter a decimal number");
-    var firstFloat = parseFloat(firstDec);
+    alert("You got " + points + " points!");
     
-    if(firstFloat < 0) {
-       alert("Your number is less than 0.");
-       allNum = allNum + "and your third number is less than 0.";
-    }
-    else if(firstFloat > firstInt) {
-       alert("Your number is greater than your first number.");
-       allNum = allNum + "and your third number is greater than your first number.";
-    }
-    else if(firstFloat > 0 && firstFloat < 10) {
-       alert("Your number is greater than 0 and less than 10.");
-       allNum = allNum + "and you third number is greater than 0 and less than 10.";
-    }
+    var month = prompt("Type in the number of the month you were born in.");
+    var monthInt = parseInt(month);
     
-    alert(allNum);
-       
+    switch(monthInt) {
+     case 12:
+     case 1:
+     case 2:
+       alert("You were born in the season of Winter");
+       break;
+     case 3:
+     case 4:
+     case 5:
+       alert("You were born in the season of Spring");    
+       break;
+     case 6:
+     case 7:
+     case 8:
+       alert("You were born in the season of Summer");
+       break;
+     case 9:
+     case 10:
+     case 11:
+       alert("You were born in the season of Fall");
+       break;
+     default:
+       alert("Your number is invalid");
+       break;
+     }
+    
     </script>
   </head>
   <body>
