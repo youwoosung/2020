@@ -2,47 +2,61 @@
   <head>
     <title>Javascript Practice</title>
     <script>
-    	var x = prompt("Enter a number");
-    	var numOne = parseInt(x);
-    	
-    	if(numOne % 2 == 0) {
-    		alert("This is an even number!");
-    	}
-    	
-    	if(numOne % 3 == 0) {
-    		alert("This is a multiple of 3!");
-    	}
-    	
-    	if(numOne % 5 == 0) {
-    		alert("This is a multiple of 5!");
-    	}
-    	
-    	if(numOne % 7 == 0) {
-    		alert("This is a multiple of 7!");
-    	}
-    	
-    	if(numOne % 10 == 0) {
-    		alert("This is a multiple of 10");
-    	}
-    	
-    	var x = prompt("Enter a number");
-    	var numTwo = parseInt(x);
-    	
-    	if(numTwo % 2 == 0) {
-    		alert("This is an even number, and I have to stop here. No more checking!");
-    	}
-    	else if(numTwo % 5 == 0) {
-    		alert("This is a multiple of 5, and I have to stop here. No more checking!");
-    	}
-    	else if(numTwo % 7 == 0) {
-    		alert("This is a multiple of 7, and I have to stop here. No more checking!");
-    	}
-    	else if(numTwo % 10 == 0) {
-    		alert("This is a multiple of 10, and I have to stop here. No more checking!");
-    	}
-    	else {
-        	alert("This input is invalid!");
-      }
+	var userInput = prompt("Enter a number");
+	var numOne = parseInt(userInput);
+	var score = 0
+	
+	if(numOne % 2 == 0) {
+		score = score + 1;
+		alert("It is an even number!");
+	}
+	
+	if(numOne % 3 == 0) {
+		score = score + 1;
+		alert("It is a multiple of 3!");
+	}
+	
+	if(numOne % 5 == 0) {
+		score = score + 1;
+		alert("It is a multiple of 5!");
+	}
+	
+	if(numOne % 7 == 0) {
+		score = score + 1;
+		alert("It is a multiple of 7!");
+	}
+	
+	if(numOne % 10 == 0) {
+		score = score + 1;
+		alert("It is a multiple of 10!");
+	}
+	
+	alert(score);
+	
+	var userInput = prompt("Enter a number from 1 to 12");
+	var numTwo = parseInt(userInput);
+	switch(numTwo) {
+		case 12:
+		case 1: 
+		case 2:
+			alert("Winter");
+			break;
+		case 3:
+		case 4: 
+		case 5:
+			alert("Spring");
+			break;
+		case 6:
+		case 7:
+		case 8: 
+			alert("Summer");
+			break;
+		case 9:
+		case 10:
+		case 11:
+			alert("Fall");
+			break;
+		}
     </script>
       <body>
     <h3>Javascript is cool</h3>
