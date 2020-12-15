@@ -4,43 +4,65 @@
      
      <script>
   
-  	 var x = prompt("Pick a number");
-	 var Int = parseInt(x);
-     
-         if(x % 2 == 0 ) {
-	    alert("This is an even number!");
-         }  
-	 if(x % 5 == 0 ) {
-	    alert("This is a multiple of 5!");
-	 }	
-	 if(x % 7 == 0 ) {
-	    alert("This is a multiple of 7!");
-	 }  
-	 if(x % 10 == 0 ) {
-	    alert("This is a multiple of 10!");
-	 }
-	 else{
-	    alert("This does not correspond to anything");
-         }
-	    
-	 var x = prompt("Pick a number");
-	 var Int = parseInt(x);
-	 
-         if(x % 2 == 0 ) {
-	    alert("This is an even number!");
-	 }   
-	 else if(x % 5 == 0) {
-	    alert("This is a multiple of 5!");
-	 }	
-	 else if(x % 7 == 0 ) {
-	    alert("This is a multiple of 7!");
-	 }   
-	 else if(x % 10 == 0 ) {
-	    alert("This is a multiple of 10!");
-     }
-     else{
-	    alert("This does not correspond to anything");
-     }
+   var userInput = prompt("Pick a number");
+   var userInt = parseInt(userInput);
+   var score = 0; 
+   
+   if(userInt % 2 == 0) {
+        score = score + 1; 
+        alert("You earned a point, your number was even!");
+   }
+   if(userInt % 3 == 0) {
+        score = score + 1; 
+        alert("You earned a point, your number was a multiple of 3!");
+   }
+   if(userInt % 5 == 0) {
+        score = score + 1; 
+        alert("You earned a point, your number was a multiple of 5!");
+   }
+   if(userInt % 7 == 0) {
+        score = score + 1; 
+        alert("You earned a point, your number was a multiple of 7!");
+   }
+   if(userInt % 10 == 0) {
+        score = score + 1; 
+        alert("You earned a point, your number was a multiple of 10!");
+   }
+   
+   confirm("Your number was " + userInput);
+   alert("With your number, you scored " + score + " points");
+   
+   
+   var month = prompt("Enter in the number of your birthmonth");
+   var monthInt = parseInt(month); 
+   
+   switch(monthInt) {
+   case 12:
+   case 1: 
+   case 2: 
+     alert("You were born in Winter!");
+     break;
+   case 3:
+   case 4:
+   case 5: 
+     alert("You were born in Spring!");
+     break; 
+   case 6:
+   case 7:
+   case 8: 
+     alert("You were born in Summer!");
+     break; 
+   case 9:
+   case 10:
+   case 11: 
+     alert("You were born in Fall!");
+     break; 
+   default: 
+     alert("The number you have entered does not match with a month.");
+     alert("Please try again if you like");
+     break;
+   }
+   
      </script>
      
     </head>
