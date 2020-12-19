@@ -269,8 +269,40 @@
        alert("Your number is invalid");
        break;
      }
-       
-  </script>
+           
+		 function tellSeason(a) {
+    switch(a) {
+     case 12:
+     case 1:
+     case 2:
+       alert("You were born in the season of Winter");
+       break;
+     case 3:
+     case 4:
+     case 5:
+       alert("You were born in the season of Spring");    
+       break;
+     case 6:
+     case 7:
+     case 8:
+       alert("You were born in the season of Summer");
+       break;
+     case 9:
+     case 10:
+     case 11:
+       alert("You were born in the season of Fall");
+       break;
+     default:
+       alert("Your number is invalid");
+       break;
+     }
+    }
+    tellSeason(1);
+    tellSeason(3);
+    tellSeason(6);
+    tellSeason(9);
+ 
+</script>
   </head>
   <body>
     <h3>Javascript</h3>
