@@ -202,6 +202,73 @@
     }
     
     alert(allNum);
+		 
+     
+    var userNum = prompt("Choose a number from 1 to 100. You will be scored based on how close your number is to mine. If you guess the number correctly you get 5 points!");
+    var userInt = parseInt(userNum);
+    var myNum = 63;
+    var myInt = parseInt(myNum);
+    var points = 0;
+    
+    if(userInt % 2 == 0) {
+       alert("Wrong! The correct answer is odd");
+       points = points - 1;
+    }
+    if(userInt % 3 == 0) {
+       alert("Nice! The correct answer is a multiple of 3");
+       points = points + 1;
+    }
+    if(userInt % 5 == 0) {
+       alert("Wrong! The correct answer is not a multiple of 5");
+       points = points - 1;
+    }
+    if(userInt % 7 == 0) {
+       alert("Nice! The correct answer is a multiple of 7");
+       points = points + 1;
+    }
+    if(userInt % 10 == 0) {
+       alert("Wrong! The correct answer is not a multiple of 10");
+       points = points - 1;
+    }
+    if(userInt == myNum) {
+       alert("Congratulations! You guessed the number correctly!");
+       points = points + 5;
+    }
+    if(userInt != myNum) {
+       alert("Wrong! The correct answer was " + myNum);
+       points = points - 5;
+    }
+    
+    alert("You got " + points + " points!");
+    
+    var month = prompt("Type in the number of the month you were born in.");
+    var monthInt = parseInt(month);
+    
+    switch(monthInt) {
+     case 12:
+     case 1:
+     case 2:
+       alert("You were born in the season of Winter");
+       break;
+     case 3:
+     case 4:
+     case 5:
+       alert("You were born in the season of Spring");    
+       break;
+     case 6:
+     case 7:
+     case 8:
+       alert("You were born in the season of Summer");
+       break;
+     case 9:
+     case 10:
+     case 11:
+       alert("You were born in the season of Fall");
+       break;
+     default:
+       alert("Your number is invalid");
+       break;
+     }
        
   </script>
   </head>
