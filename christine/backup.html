@@ -404,6 +404,46 @@
    }
 	  
 	  
+ function seasonMonth(month) {
+       switch(month) {
+   
+   case 12:
+   case 1: 
+   case 2: 
+     alert("You were born in Winter!");
+     break;
+   case 3:
+   case 4:
+   case 5: 
+     alert("You were born in Spring!");
+     break; 
+   case 6:
+   case 7:
+   case 8: 
+     alert("You were born in Summer!");
+     break; 
+   case 9:
+   case 10:
+   case 11: 
+     alert("You were born in Fall!");
+     break; 
+   default: 
+     alert("The number you have entered does not match with a month.");
+     alert("Please try again if you like");
+     break;
+         }
+     }
+     
+     seasonMonth(2);
+     seasonMonth(11);
+     seasonMonth(9);
+     seasonMonth(3);
+     seasonMonth(14);
+     seasonMonth(6);
+	  
+
+	  
+	  
      </script>
      
      </html>
