@@ -253,6 +253,64 @@
 				alert("Your number does not represent a month of the year");
 				alert("The season you were born in is unknown");
 				break;
+		var num = prompt("Enter one whole number");
+		var numTwo = prompt("Enter a second whole number");
+		var number = parseInt(num);
+		var numberTwo = parseInt(numTwo);
+		
+		alert("The numbers you entered will be combined through addition, subtraction, multiplication, and division.");
+		
+		function numberOperations(number, numberTwo) {
+			var sum = number + numberTwo;
+			alert(sum);
+			
+			var difference = number - numberTwo;
+			alert(difference);
+			
+			var product = number * numberTwo;
+			alert(product);
+			
+			var quotient = number / numberTwo;
+			alert(quotient);
+		}
+			
+			numberOperations(number, numberTwo);
+		
+		
+		function numberGuesses(num) {
+		
+		var num = prompt("Try to guess my number. It is a whole number and is between 0 and 20.");
+		var userNum = parseInt(num);
+		var myNum = 14;
+		var myNumber = parseInt(myNum);
+			
+			if(userNum > myNumber) {
+			alert("Your number is greater than my number.");
+			}
+			
+			if(userNum < myNumber) {
+			alert("Your number is less than my number.");
+			}
+			
+			if(userNum == myNumber) {
+			alert("Your number is equal to my number and you guessed correctly.");
+			}
+			
+			else if(userNum != myNumber) {
+			alert("You guessed incorrectly.");
+			}
+		}
+			
+			numberGuesses(num);
+			numberGuesses(num);
+			numberGuesses(num);
+			numberGuesses(num);
+			numberGuesses(num);
+			numberGuesses(num);
+			numberGuesses(num);
+			numberGuesses(num);
+			numberGuesses(num);
+			numberGuesses(num);
 		}	
 		</script>
 	</head>
