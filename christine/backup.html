@@ -441,6 +441,89 @@
      seasonMonth(14);
      seasonMonth(6);
 	  
+     var userInputOne = prompt("Pick a number of your choice");
+     var userIntOne = parseInt(userInputOne);
+     var userInputTwo = prompt("Pick another number of your choice");
+     var userIntTwo = parseInt(userInputTwo);
+     
+     confirm("The first number you inputed was " + userIntOne);
+     confirm("The second number you inputed was " + userIntTwo);
+        
+     addNumbers(userIntOne, userIntTwo);
+     
+     function addNumbers(userIntOne, userIntTwo) {
+        var sum = userIntOne + userIntTwo;
+        alert(userInputOne + " plus " + userInputTwo + " is " + sum);
+     }
+     
+     subNumbers(userIntOne, userIntTwo);
+     
+     function subNumbers(userIntOne, userIntTwo) {
+        var sub = userInputOne - userInputTwo;
+        alert(userInputOne + " minus " + userInputTwo + " is " + sub);
+     }
+     
+     divNumbers(userIntOne, userIntTwo);
+     
+     function divNumbers(userIntOne, userIntTwo) {
+        var div = userInputOne / userInputTwo;
+        alert(userInputOne + " divided by " + userInputTwo + " is " + div);
+     }
+     
+     MultNumbers(userIntOne, userIntTwo);
+     
+     function MultNumbers(userIntOne, userIntTwo) {
+        var mult = userInputOne * userInputTwo;
+        alert(userInputOne + " times " + userInputTwo + " is " + mult);
+     }
+     
+     alert("In this game you are going to try to guess the number that I already picked! My number is going to be between 0 to 30.");
+      
+     var userNum = prompt("Enter your number");
+     var userInt = parseInt(userNum);
+     var myNum = 19;
+     var myInt = parseInt(myNum);
+     
+     function guessMyNumber(userInt) {
+     
+       if(userInt > myNum) {
+	     alert("Your number is greater than my number.");
+		   }
+			
+	     if(userInt < myNum) {
+		   alert("Your number is less than my number.");
+		   }
+			
+		   if(userInt == myNum) {
+		   alert("YAY! You guessed it correctly!");
+		   }
+			
+		   else if(userInt != myNum) {
+	  	 alert("You guessed incorrectly.");
+		   }
+	   }
+         
+         
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+	  
 
 	  
 	  
