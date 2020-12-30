@@ -3,66 +3,91 @@
      <title>Javascript Practice</title>
      
      <script>
-  
-   var userInput = prompt("Pick a number");
-   var userInt = parseInt(userInput);
-   var score = 0; 
-   
-   if(userInt % 2 == 0) {
-        score = score + 1; 
-        alert("You earned a point, your number was even!");
-   }
-   if(userInt % 3 == 0) {
-        score = score + 1; 
-        alert("You earned a point, your number was a multiple of 3!");
-   }
-   if(userInt % 5 == 0) {
-        score = score + 1; 
-        alert("You earned a point, your number was a multiple of 5!");
-   }
-   if(userInt % 7 == 0) {
-        score = score + 1; 
-        alert("You earned a point, your number was a multiple of 7!");
-   }
-   if(userInt % 10 == 0) {
-        score = score + 1; 
-        alert("You earned a point, your number was a multiple of 10!");
-   }
-   
-   confirm("Your number was " + userInput);
-   alert("With your number, you scored " + score + " points");
-   
-   
-   var month = prompt("Enter in the number of your birthmonth");
-   var monthInt = parseInt(month); 
-   
-   switch(monthInt) {
-   case 12:
-   case 1: 
-   case 2: 
-     alert("You were born in Winter!");
-     break;
-   case 3:
-   case 4:
-   case 5: 
-     alert("You were born in Spring!");
-     break; 
-   case 6:
-   case 7:
-   case 8: 
-     alert("You were born in Summer!");
-     break; 
-   case 9:
-   case 10:
-   case 11: 
-     alert("You were born in Fall!");
-     break; 
-   default: 
-     alert("The number you have entered does not match with a month.");
-     alert("Please try again if you like");
-     break;
-   }
-   
+    
+     var userInputOne = prompt("Pick a number of your choice");
+     var userIntOne = parseInt(userInputOne);
+     var userInputTwo = prompt("Pick another number of your choice");
+     var userIntTwo = parseInt(userInputTwo);
+     
+     confirm("The first number you inputed was " + userIntOne);
+     confirm("The second number you inputed was " + userIntTwo);
+        
+     addNumbers(userIntOne, userIntTwo);
+     
+     function addNumbers(userIntOne, userIntTwo) {
+        var sum = userIntOne + userIntTwo;
+        alert(userInputOne + " plus " + userInputTwo + " is " + sum);
+     }
+     
+     subNumbers(userIntOne, userIntTwo);
+     
+     function subNumbers(userIntOne, userIntTwo) {
+        var sub = userInputOne - userInputTwo;
+        alert(userInputOne + " minus " + userInputTwo + " is " + sub);
+     }
+     
+     divNumbers(userIntOne, userIntTwo);
+     
+     function divNumbers(userIntOne, userIntTwo) {
+        var div = userInputOne / userInputTwo;
+        alert(userInputOne + " divided by " + userInputTwo + " is " + div);
+     }
+     
+     MultNumbers(userIntOne, userIntTwo);
+     
+     function MultNumbers(userIntOne, userIntTwo) {
+        var mult = userInputOne * userInputTwo;
+        alert(userInputOne + " times " + userInputTwo + " is " + mult);
+     }
+     
+     alert("In this game you are going to try to guess the number that I already picked! My number is going to be between 0 to 30.");
+      
+     var userNum = prompt("Enter your number");
+     var userInt = parseInt(userNum);
+     var myNum = 19;
+     var myInt = parseInt(myNum);
+     
+     function guessMyNumber(userInt) {
+     
+       if(userInt > myNum) {
+	     alert("Your number is greater than my number.");
+		   }
+			
+	     if(userInt < myNum) {
+		   alert("Your number is less than my number.");
+		   }
+			
+		   if(userInt == myNum) {
+		   alert("YAY! You guessed it correctly!");
+		   }
+			
+		   else if(userInt != myNum) {
+	  	 alert("You guessed incorrectly.");
+		   }
+	   }
+         
+         
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+         var userNum = prompt("Enter your number");
+         guessMyNumber(userNum);
+
+    
      </script>
      
     </head>
