@@ -4,9 +4,8 @@
      
      <script>
       
-    function findMultiple(userNumber, multipleToTest) {
+    function findMultiple() {
     
-       var userNumber = prompt("Pick a number of your choice");
        var userInt = parseInt(userNumber); 
        var mulipleToTest = 6; 
        
@@ -19,12 +18,14 @@
        }   
     }
     
-    findMultiple();
-    findMultiple();
-    findMultiple();
-    findMultiple();
-    findMultiple();
+    var userNumber = prompt("Pick a number of your choice");
+    findMultiple(userNumber, 6);
     
+    var userNumber = prompt("Pick another number of your choice");
+    findMultiple(userNumber, 6);
+    
+    var userNumber = prompt("Pick another number of your choice");
+    findMultiple(userNumber, 6);
     
 
 
