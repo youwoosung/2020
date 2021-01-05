@@ -470,59 +470,51 @@
         alert(userInputOne + " divided by " + userInputTwo + " is " + div);
      }
      
-     MultNumbers(userIntOne, userIntTwo);
+     multNumbers(userIntOne, userIntTwo);
      
-     function MultNumbers(userIntOne, userIntTwo) {
+     function multNumbers(userIntOne, userIntTwo) {
         var mult = userInputOne * userInputTwo;
         alert(userInputOne + " times " + userInputTwo + " is " + mult);
      }
      
      alert("In this game you are going to try to guess the number that I already picked! My number is going to be between 0 to 30.");
       
-     var userNum = prompt("Enter your number");
-     var userInt = parseInt(userNum);
+     
      var myNum = 19;
-     var myInt = parseInt(myNum);
      
-     function guessMyNumber(userInt) {
+     function guessMyNumber() {
      
-       if(userInt > myNum) {
-	     alert("Your number is greater than my number.");
-		   }
+         var userNum = prompt("Enter your number");
+         var userInt = parseInt(userNum);
+     
+         if(userInt > myNum) {
+	 alert("Your number is greater than my number.");
+	 }
 			
-	     if(userInt < myNum) {
-		   alert("Your number is less than my number.");
-		   }
+	 else if(userInt < myNum) {
+         alert("Your number is less than my number.");
+	 }
 			
-		   if(userInt == myNum) {
-		   alert("YAY! You guessed it correctly!");
-		   }
+	 else if(userInt == myNum) {
+	 alert("YAY! You guessed it correctly!");
+	 }
 			
-		   else if(userInt != myNum) {
-	  	 alert("You guessed incorrectly.");
-		   }
-	   }
+	 else {
+	 alert("You guessed incorrectly.");
+	 }
+      }
          
          
-         guessMyNumber(userNum);
-         var userNum = prompt("Enter your number");
-         guessMyNumber(userNum);
-         var userNum = prompt("Enter your number");
-         guessMyNumber(userNum);
-         var userNum = prompt("Enter your number");
-         guessMyNumber(userNum);
-         var userNum = prompt("Enter your number");
-         guessMyNumber(userNum);
-         var userNum = prompt("Enter your number");
-         guessMyNumber(userNum);
-         var userNum = prompt("Enter your number");
-         guessMyNumber(userNum);
-         var userNum = prompt("Enter your number");
-         guessMyNumber(userNum);
-         var userNum = prompt("Enter your number");
-         guessMyNumber(userNum);
-         var userNum = prompt("Enter your number");
-         guessMyNumber(userNum);
+         guessMyNumber();
+         guessMyNumber();
+         guessMyNumber();
+         guessMyNumber();
+         guessMyNumber();
+         guessMyNumber();
+         guessMyNumber();
+         guessMyNumber();
+         guessMyNumber();
+         guessMyNumber();
 	  
 
 	  
