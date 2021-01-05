@@ -3,82 +3,29 @@
      <title>Javascript Practice</title>
      
      <script>
-    
-     var userInputOne = prompt("Pick a number of your choice");
-     var userIntOne = parseInt(userInputOne);
-     var userInputTwo = prompt("Pick another number of your choice");
-     var userIntTwo = parseInt(userInputTwo);
-     
-     confirm("The first number you inputed was " + userIntOne);
-     confirm("The second number you inputed was " + userIntTwo);
-        
-     addNumbers(userIntOne, userIntTwo);
-     
-     function addNumbers(userIntOne, userIntTwo) {
-        var sum = userIntOne + userIntTwo;
-        alert(userInputOne + " plus " + userInputTwo + " is " + sum);
-     }
-     
-     subNumbers(userIntOne, userIntTwo);
-     
-     function subNumbers(userIntOne, userIntTwo) {
-        var sub = userInputOne - userInputTwo;
-        alert(userInputOne + " minus " + userInputTwo + " is " + sub);
-     }
-     
-     divNumbers(userIntOne, userIntTwo);
-     
-     function divNumbers(userIntOne, userIntTwo) {
-        var div = userInputOne / userInputTwo;
-        alert(userInputOne + " divided by " + userInputTwo + " is " + div);
-     }
-     
-     multNumbers(userIntOne, userIntTwo);
-     
-     function multNumbers(userIntOne, userIntTwo) {
-        var mult = userInputOne * userInputTwo;
-        alert(userInputOne + " times " + userInputTwo + " is " + mult);
-     }
-     
-     alert("In this game you are going to try to guess the number that I already picked! My number is going to be between 0 to 30.");
       
-     
-     var myNum = 19;
-     
-     function guessMyNumber() {
-     
-         var userNum = prompt("Enter your number");
-         var userInt = parseInt(userNum);
-     
-         if(userInt > myNum) {
-	 alert("Your number is greater than my number.");
-	 }
-			
-	 else if(userInt < myNum) {
-         alert("Your number is less than my number.");
-	 }
-			
-	 else if(userInt == myNum) {
-	 alert("YAY! You guessed it correctly!");
-	 }
-			
-	 else {
-	 alert("You guessed incorrectly.");
-	 }
-      }
-         
-         
-         guessMyNumber();
-         guessMyNumber();
-         guessMyNumber();
-         guessMyNumber();
-         guessMyNumber();
-         guessMyNumber();
-         guessMyNumber();
-         guessMyNumber();
-         guessMyNumber();
-         guessMyNumber();
-
+    function findMultiple(userNumber, multipleToTest) {
+    
+       var userNumber = prompt("Pick a number of your choice");
+       var userInt = parseInt(userNumber); 
+       var mulipleToTest = 6; 
+       
+       if(userInt % 6 == 0) {
+       alert("YES! This number is a multiple of 6");
+       }
+            
+       else if(userInt % 6 != 0) {
+       alert("No this is not a multiple of 6");
+       }   
+    }
+    
+    findMultiple();
+    findMultiple();
+    findMultiple();
+    findMultiple();
+    findMultiple();
+    
+    
 
 
 
