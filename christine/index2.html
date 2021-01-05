@@ -4,29 +4,27 @@
      
      <script>
       
-    function findMultiple() {
-    
-       var userInt = parseInt(userNumber); 
-       var mulipleToTest = 6; 
+    function findMultiple(userNumber, multipleToTest) {
+   
+       var userInt = parseInt(userNumber);
        
        if(userInt % 6 == 0) {
-       alert("YES! This number is a multiple of 6");
+       alert("YES! This number is a multiple of " + multipleToTest);
        }
-            
-       else if(userInt % 6 != 0) {
-       alert("No this is not a multiple of 6");
-       }   
+           
+       else if(userInt % multipleToTest != 0) {
+       alert("No this is not a multiple of " + multipleToTest);
+       }  
     }
-    
+   
     var userNumber = prompt("Pick a number of your choice");
     findMultiple(userNumber, 6);
-    
+   
     var userNumber = prompt("Pick another number of your choice");
-    findMultiple(userNumber, 6);
-    
+    findMultiple(userNumber, 45);
+   
     var userNumber = prompt("Pick another number of your choice");
-    findMultiple(userNumber, 6);
-    
+    findMultiple(userNumber, 22);
 
 
 
