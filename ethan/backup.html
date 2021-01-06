@@ -253,6 +253,7 @@
 				alert("Your number does not represent a month of the year");
 				alert("The season you were born in is unknown");
 				break;
+		
 		var num = prompt("Enter one whole number");
 		var numTwo = prompt("Enter a second whole number");
 		var number = parseInt(num);
@@ -312,6 +313,29 @@
 			numberGuesses(num);
 			numberGuesses(num);
 		}	
+			function correctMultiple(number, numberTwo) {
+		
+		var num = prompt("Enter any whole number.");
+		var numTwo = prompt("Enter another whole number.");
+		var number = parseInt(num);
+		var numberTwo = parseInt(numTwo);
+		
+		alert("The second number you entered will serve as a multiple for the first number you entered.");
+		alert("Continue to see if your second number served as a multiple for your first number.");
+		
+			if(number % numberTwo == 0) {
+			alert("Your first number, " + number + ", is a multiple of " + numberTwo);
+			}
+			
+			else {
+			alert("Your first number, " + number + ", is not a multiple of " + numberTwo);
+			}
+		}
+		
+			correctMultiple(0, 0);
+			correctMultiple(0, 0);
+			correctMultiple(0, 0);
+			correctMultiple(0, 0);
 		</script>
 	</head>
 	<body>
