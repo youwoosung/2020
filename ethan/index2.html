@@ -2,64 +2,29 @@
 	<head>
 		<title>Javascript Practice</title>
 		<script>
-		var num = prompt("Enter one whole number");
-		var numTwo = prompt("Enter a second whole number");
+		function correctMultiple(number, numberTwo) {
+		
+		var num = prompt("Enter any whole number.");
+		var numTwo = prompt("Enter another whole number.");
 		var number = parseInt(num);
 		var numberTwo = parseInt(numTwo);
 		
-		alert("The numbers you entered will be combined through addition, subtraction, multiplication, and division.");
+		alert("The second number you entered will serve as a multiple for the first number you entered.");
+		alert("Continue to see if your second number served as a multiple for your first number.");
 		
-		function numberOperations(number, numberTwo) {
-			var sum = number + numberTwo;
-			alert("The sum of your numbers is " + sum);
-			
-			var difference = number - numberTwo;
-			alert("The difference of your numbers is " + difference);
-			
-			var product = number * numberTwo;
-			alert("The product of your numbers is " + product);
-			
-			var quotient = number / numberTwo;
-			alert("The quotient of your numbers is " + quotient);
-		}
-			
-			numberOperations(number, numberTwo);
-		
-		
-		function numberGuesses(num) {
-		
-		var num = prompt("Try to guess my number. It is a whole number and is between 0 and 20.");
-		var userNum = parseInt(num);
-		var myNum = 14;
-		var myNumber = parseInt(myNum);
-			
-			if(userNum > myNumber) {
-			alert("Your number is greater than my number.");
-			}
-			
-			else if(userNum < myNumber) {
-			alert("Your number is less than my number.");
-			}
-			
-			else if(userNum == myNumber) {
-			alert("Your number is equal to my number and you guessed correctly.");
+			if(number % numberTwo == 0) {
+			alert("Your first number, " + number + ", is a multiple of " + numberTwo);
 			}
 			
 			else {
-			alert("You guessed incorrectly.");
+			alert("Your first number, " + number + ", is not a multiple of " + numberTwo);
 			}
 		}
-			
-			numberGuesses(num);
-			numberGuesses(num);
-			numberGuesses(num);
-			numberGuesses(num);
-			numberGuesses(num);
-			numberGuesses(num);
-			numberGuesses(num);
-			numberGuesses(num);
-			numberGuesses(num);
-			numberGuesses(num);
+		
+			correctMultiple(0, 0);
+			correctMultiple(0, 0);
+			correctMultiple(0, 0);
+			correctMultiple(0, 0);
 			
 		</script>
 	</head>
