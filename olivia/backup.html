@@ -301,6 +301,76 @@
     tellSeason(3);
     tellSeason(6);
     tellSeason(9);
+		 
+    var firstNum = prompt("Enter a number of your choice");
+ 	var firstInt = parseInt(firstNum);
+ 	var secondNum = prompt("Enter another number");
+ 	var secondInt = parseInt(secondNum);
+ 	
+ 	function operations(firstInt, secondInt) {
+ 	   var sum = firstInt + secondInt;
+ 	   alert(sum);
+ 	   var difference = firstInt - secondInt;
+ 	   alert(difference);
+       var quotient = firstInt / secondInt;
+       alert(quotient);
+       var product = firstInt * secondInt;
+       alert(product);
+    }
+    operations(firstInt, secondInt);
+    
+    confirm("I have chosen a number from 1 to 20. You will have 10 chances to choose the correct number. Good luck!!");
+    var myNum = 15;
+    var userNum = prompt("Enter in a number");
+    var userInt = parseInt(userNum);
+    
+    function guess(userInt, myNum) {
+    
+      if(myNum > userInt) {
+         alert("The number you have chosen is lower than the correct number. Try again");
+      }
+      if(myNum < userInt) {
+         alert("The number you have chosen is higher than the chosen number. Try again");
+      }
+      if(myNum == userInt) {
+         alert("Great job! That is the correct number!!");
+      }
+      else if(userInt != myNum) {
+         alert("Wrong number!");
+      }
+    }
+    
+    guess(userInt, myNum);
+    var userNum = prompt("Enter in a number");
+    var userInt = parseInt(userNum);
+    guess(userInt, myNum);
+    var userNum = prompt("Enter in a number");
+    var userInt = parseInt(userNum);
+    guess(userInt, myNum);
+    var userNum = prompt("Enter in a number");
+    var userInt = parseInt(userNum);
+    guess(userInt, myNum);
+    var userNum = prompt("Enter in a number");
+    var userInt = parseInt(userNum);
+    guess(userInt, myNum);
+    var userNum = prompt("Enter in a number");
+    var userInt = parseInt(userNum);
+    guess(userInt, myNum);
+    var userNum = prompt("Enter in a number");
+    var userInt = parseInt(userNum);
+    guess(userInt, myNum);
+    var userNum = prompt("Enter in a number");
+    var userInt = parseInt(userNum);
+    guess(userInt, myNum);
+    var userNum = prompt("Enter in a number");
+    var userInt = parseInt(userNum);
+    guess(userInt, myNum);
+    var userNum = prompt("Enter in a number");
+    var userInt = parseInt(userNum);
+    guess(userInt, myNum);
+    var userNum = prompt("Enter in a number");
+    var userInt = parseInt(userNum);
+
  
 </script>
   </head>
