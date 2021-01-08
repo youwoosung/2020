@@ -1,67 +1,28 @@
+  
 <html>
   <head>
     <title>Javascript</title>
     <script>   	
+        
+    function findMultiple(userInt, multiple) {
     
- 	var firstNum = prompt("Enter a number of your choice");
- 	var firstInt = parseInt(firstNum);
- 	var secondNum = prompt("Enter another number");
- 	var secondInt = parseInt(secondNum);
- 	
- 	function add(firstInt, secondInt) {
- 	   var sum = firstInt + secondInt;
- 	   alert(sum);
-  }
-  function subtract(firstInt, secondInt) {
-     var difference = firstInt - secondInt;
- 	   alert(difference);
-  }
-  function divide(firstInt, secondInt) {
-     var quotient = firstInt / secondInt;
-     alert(quotient);
-  }
-  function multiply(firstInt, secondInt) {
-     var product = firstInt * secondInt;
-     alert(product);
-    }
-    add(firstInt, secondInt);
-    subtract(firstInt, secondInt);
-    divide(firstInt, secondInt);
-    multiply(firstInt, secondInt);
-    
-    confirm("I have chosen a number from 1 to 20. You will have 10 chances to choose the correct number. Good luck!!");
-    var myNum = 15;
-
-    function guess() {
+    var userInput = prompt("Enter a number");
+    var userInt = parseInt(userInput);
       
-      var userNum = prompt("Enter in a number");
-      var userInt = parseInt(userNum);
-      
-      if(myNum > userInt) {
-         alert("The number you have chosen is lower than the correct number. Try again");
-      }
-      else if(myNum < userInt) {
-         alert("The number you have chosen is higher than the chosen number. Try again");
-      }
-      else if(myNum == userInt) {
-         alert("Great job! That is the correct number!!");
+      if(userInt % multiple == 0) {
+          alert("Your number is a multiple of " + multiple);
       }
       else {
-         alert("Wrong number!");
+          alert("Your number is not a multiple of " + multiple);
       }
-    }
+    }    
     
-    guess();
-    guess();
-    guess();
-    guess();
-    guess();
-    guess();
-    guess();
-    guess();
-    guess();
-    guess();
-
+    findMultiple(0, 2);
+    findMultiple(0, 3);
+    findMultiple(0, 5);
+    findMultiple(0, 7);
+    findMultiple(0, 9);
+     
     </script>
   </head>
   <body>
