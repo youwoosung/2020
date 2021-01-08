@@ -32,7 +32,8 @@
     confirm("I have chosen a number from 1 to 20. You will have 10 chances to choose the correct number. Good luck!!");
     var myNum = 15;
 
-    function guess(a,b) {
+    function guess() {
+      
       var userNum = prompt("Enter in a number");
       var userInt = parseInt(userNum);
       
@@ -45,24 +46,20 @@
       else if(myNum == userInt) {
          alert("Great job! That is the correct number!!");
       }
-      else if(myNum != userInt) {
-         alert("Wrong number!");
-      }
       else {
-         alert("Your number is invalid");
-      }
+         alert("Wrong number!");
     }
     
-    guess(a,b);
-    guess(a,b);
-    guess(a,b);
-    guess(a,b);
-    guess(a,b);
-    guess(a,b);
-    guess(a,b);
-    guess(a,b);
-    guess(a,b);
-    guess(a,b);
+    guess();
+    guess();
+    guess();
+    guess();
+    guess();
+    guess();
+    guess();
+    guess();
+    guess();
+    guess();
 
     </script>
   </head>
