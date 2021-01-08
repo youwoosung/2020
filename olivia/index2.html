@@ -4,10 +4,12 @@
     <title>Javascript</title>
     <script>   	
         
-    function findMultiple(userInt, multiple) {
+    function findMultiple(oneInt, twoInt) {
     
-    var userInput = prompt("Enter a number");
-    var userInt = parseInt(userInput);
+    var numOne = prompt("Enter a number");
+    var oneInt = parseInt(numOne);
+    var numTwo = prompt("Enter another number. This number will be used to see if it is a multiple of your first number.");
+    var twoInt = parse(numTwo);
       
       if(userInt % multiple == 0) {
           alert("Your number is a multiple of " + multiple);
@@ -17,11 +19,11 @@
       }
     }    
     
-    findMultiple(0, 2);
-    findMultiple(0, 3);
-    findMultiple(0, 5);
-    findMultiple(0, 7);
-    findMultiple(0, 9);
+    findMultiple(0, 0);
+    findMultiple(0, 0);
+    findMultiple(0, 0);
+    findMultiple(0, 0);
+    findMultiple(0, 0);
      
     </script>
   </head>
