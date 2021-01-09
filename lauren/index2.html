@@ -2,72 +2,36 @@
   <head>
     <title> Javascript Practice</title>
     <script>
-    var x = prompt("Enter a number");
-    var numOne = parseInt(x);
+    function findMultiple(numOne, numTwo) {
+   		if(numOne % numTwo == 0) {
+  		alert("Your number is a multiple of " + numTwo);
+  	  	}
     
-    var y = prompt("Enter another number");
-    var numTwo = parseInt(y);
-    
-    alert("Your first number is " + numOne);
-    alert("Your second number is " + numTwo);
-
-    addNumbers(numOne, numTwo);
-    subNumbers(numOne, numTwo);
-    mulNumbers(numOne, numTwo);
-    divNumbers(numOne, numTwo);
-    
-    function addNumbers(x, y) {
-    	var sum = x + y;
-    	alert(numOne + " plus " + numTwo + " is " + sum);
-    }
-    
-    function subNumbers(x, y) {
-    	var sub = x - y;
-    	alert(numOne + " minus " + numTwo + " is " + sub);
-    }
-    
-    function mulNumbers(x, y) {
-    	var mul = x * y;
-    	alert(numOne + " times " + numTwo + " is " + mul);
-    }
-    
-    function divNumbers(x, y) {
-    	var div = x / y;
-    	alert(numOne + " divied by " + numTwo + " is " + div);
-    }
-    
-    guessNum();
-    guessNum();
-    guessNum();
-    guessNum();
-    guessNum();
-    guessNum();
-    guessNum();
-    guessNum();
-    guessNum();
-    guessNum();
-    
-    function guessNum() {
-		var myNumber = 38;
-		var userInput = prompt ("Guess the correct number. the number is inbetween 1 and 40.");
-		var numThree = parseInt(userInput);
-
-    	if(numThree > myNumber) {
-    		alert("The number you entered is greater than the correct number. Please try again.");
-    	}
-    	
-    	else if (numThree < myNumber) {
-    		alert("The number you entered is less than the correct number. Please try again.");
-    	}
-   
-    	else if(numThree = myNumber) {
-    		alert("The number you entered is the same number as the correct number!");
-    	}
-    	
-    	else if(numThree != myNumber) {
-    		alert("The number is Invalid.");
-    	}
-   	}
+  	 	else if(numOne % numTwo != 0) {
+   	  	alert("Your number is not a multiple of " + numTwo);
+   	  	}
+	}
+	
+	var userInput = prompt("Enter a number");
+   	var numOne = parseInt(userInput);
+   	
+    findMultiple(numOne, 2);
+	findMultiple(numOne, 5);
+	findMultiple(numOne, 10);	
+	
+	userInput = prompt("Enter a number");
+   	numOne = parseInt(userInput);
+   	
+   	findMultiple(numOne, 2);
+	findMultiple(numOne, 5);
+	findMultiple(numOne, 10);
+	
+	userInput = prompt("Enter a number");
+   	numOne = parseInt(userInput);
+   	
+   	findMultiple(numOne, 2);
+	findMultiple(numOne, 5);
+	findMultiple(numOne, 10);
     </script>
    </head>
    <body>
