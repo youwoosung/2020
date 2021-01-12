@@ -4,27 +4,40 @@
      
      <script>
       
-    function findMultiple(userNumber, multipleToTest) {
-   
-       var userInt = parseInt(userNumber);
-       
-       if(userInt % multipleToTest == 0) {
-          alert("YES! This number is a multiple of " + multipleToTest);
-       }   
-       else {
-          alert("No this is not a multiple of " + multipleToTest);
-       }  
+    alert("You will be picking two numbers to run through addition, subtraction, division and multiplication.");
+    
+    var numOne = prompt("Pick your first number");
+    var numTwo = prompt("Pick your second number");
+    var userIntOne = parseInt(numOne);
+    var userIntTwo = parseInt(numTwo);
+    
+    function addNumbers(userIntOne, userIntTwo) {
+       var sum = userIntOne + userIntTwo;
+       alert(userIntOne + " plus " + userIntTwo + " is " + sum);
     }
-   
-    var userNumber = prompt("Pick a number of your choice");
-    findMultiple(userNumber, 6);
-   
-    var userNumber = prompt("Pick another number of your choice");
-    findMultiple(userNumber, 45);
-   
-    var userNumber = prompt("Pick another number of your choice");
-    findMultiple(userNumber, 22);
-
+    
+    addNumbers(userIntOne, userIntTwo);
+    
+    function subNumbers(userIntOne, userIntTwo) {
+       var sub = userIntOne - userIntTwo;
+       alert(userIntOne + " minus " + userIntTwo + " is " + sub);
+    }
+    
+    subNumbers(userIntOne, userIntTwo);
+    
+    function divNumbers(userIntOne, userIntTwo) {
+       var div = userIntOne / userIntTwo;
+       alert(userIntOne + " divided by " + userIntTwo + " is " + div);
+    }
+    
+    divNumbers(userIntOne, userIntTwo);
+    
+    function multiNumbers(userIntOne, userIntTwo) {
+       var multi = userIntOne * userIntTwo;
+       alert(userIntOne + " multiplied by " + userIntTwo + " is " + multi);
+    }
+    
+    multiNumbers(userIntOne, userIntTwo);  
 
 
     
