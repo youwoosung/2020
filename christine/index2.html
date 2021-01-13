@@ -12,33 +12,41 @@
     var userIntTwo = parseInt(numTwo);
     
     function addNumbers(userIntOne, userIntTwo) {
-       var sum = userIntOne + userIntTwo;
-       alert(userIntOne + " plus " + userIntTwo + " is " + sum);
+       return userIntOne + userIntTwo;
     }
     
-    addNumbers(userIntOne, userIntTwo);
+    var result = addNumbers(userIntOne, userIntTwo);
+    alert("You are adding " + userIntOne + " and " + userIntTwo);
+    alert("Your result would be...");
+    alert(result);
     
     function subNumbers(userIntOne, userIntTwo) {
-       var sub = userIntOne - userIntTwo;
-       alert(userIntOne + " minus " + userIntTwo + " is " + sub);
+      return userIntOne - userIntTwo; 
     }
     
-    subNumbers(userIntOne, userIntTwo);
+    var result = subNumbers(userIntOne, userIntTwo);
+    alert("You are subtracting " + userIntOne + " and " + userIntTwo);
+    alert("Your result would be...");
+    alert(result);
+    
     
     function divNumbers(userIntOne, userIntTwo) {
-       var div = userIntOne / userIntTwo;
-       alert(userIntOne + " divided by " + userIntTwo + " is " + div);
+       return userIntOne / userIntTwo;
     }
     
-    divNumbers(userIntOne, userIntTwo);
+    var result = divNumbers(userIntOne, userIntTwo);
+    alert("You are dividing " + userIntOne + " and " + userIntTwo);
+    alert("Your result would be...");
+    alert(result);
     
     function multiNumbers(userIntOne, userIntTwo) {
-       var multi = userIntOne * userIntTwo;
-       alert(userIntOne + " multiplied by " + userIntTwo + " is " + multi);
+       return userIntOne * userIntTwo; 
     }
     
-    multiNumbers(userIntOne, userIntTwo);  
-
+    var result = multiNumbers(userIntOne, userIntTwo);  
+    alert("You are mulitplying " + userIntOne + " and " + userIntTwo);
+    alert("Your result would be...");
+    alert(result);
 
     
      </script>
