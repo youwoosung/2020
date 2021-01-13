@@ -538,7 +538,49 @@
     var userNumber = prompt("Pick another number of your choice");
     findMultiple(userNumber, 22);
 
-	  
+    alert("You will be picking two numbers to run through addition, subtraction, division and multiplication.");
+    
+    var numOne = prompt("Pick your first number");
+    var numTwo = prompt("Pick your second number");
+    var userIntOne = parseInt(numOne);
+    var userIntTwo = parseInt(numTwo);
+    
+    function addNumbers(userIntOne, userIntTwo) {
+       return userIntOne + userIntTwo;
+    }
+    
+    var result = addNumbers(userIntOne, userIntTwo);
+    alert("You are adding " + userIntOne + " and " + userIntTwo);
+    alert("Your result would be...");
+    alert(result);
+    
+    function subNumbers(userIntOne, userIntTwo) {
+      return userIntOne - userIntTwo; 
+    }
+    
+    var result = subNumbers(userIntOne, userIntTwo);
+    alert("You are subtracting " + userIntOne + " and " + userIntTwo);
+    alert("Your result would be...");
+    alert(result);
+    
+    
+    function divNumbers(userIntOne, userIntTwo) {
+       return userIntOne / userIntTwo;
+    }
+    
+    var result = divNumbers(userIntOne, userIntTwo);
+    alert("You are dividing " + userIntOne + " and " + userIntTwo);
+    alert("Your result would be...");
+    alert(result);
+    
+    function multiNumbers(userIntOne, userIntTwo) {
+       return userIntOne * userIntTwo; 
+    }
+    
+    var result = multiNumbers(userIntOne, userIntTwo);  
+    alert("You are mulitplying " + userIntOne + " and " + userIntTwo);
+    alert("Your result would be...");
+    alert(result);  
 	  
      </script>
      
