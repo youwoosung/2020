@@ -336,6 +336,41 @@
 			correctMultiple(0, 0);
 			correctMultiple(0, 0);
 			correctMultiple(0, 0);
+			
+		var numberOne = prompt("Enter a number");
+		var numberTwo = prompt("Enter another number");
+		var numOne = parseInt(numberOne);
+		var numTwo = parseInt(numberTwo);
+		
+		alert("The two numbers you entered will be used in addition, subtraction, multiplication, and division.");
+		
+		function addNumbers(numOne, numTwo) {	
+			return numOne + numTwo;
+		}
+		
+		var answer = addNumbers(numOne, numTwo);
+		alert("The sum of your two numbers is " + answer);
+		
+		function subtractNumbers(numOne, numTwo) {	
+			return numOne - numTwo;
+		}
+		
+		var answer = subtractNumbers(numOne, numTwo);
+		alert("The difference of your two numbers is " + answer);
+		
+		function multiplyNumbers(numOne, numTwo) {	
+			return numOne * numTwo;
+		}
+		
+		var answer = multiplyNumbers(numOne, numTwo);
+		alert("The product of your two numbers is " + answer);
+		
+		function divideNumbers(numOne, numTwo) {	
+			return numOne / numTwo;
+		}
+		
+		var answer = divideNumbers(numOne, numTwo);
+		alert("The quotient of your two numbers is " + answer);
 		</script>
 	</head>
 	<body>
