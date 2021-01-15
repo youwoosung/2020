@@ -2,30 +2,40 @@
 	<head>
 		<title>Javascript Practice</title>
 		<script>
-		function correctMultiple(number, numberTwo) {
+		var numberOne = prompt("Enter a number");
+		var numberTwo = prompt("Enter another number");
+		var numOne = parseInt(numberOne);
+		var numTwo = parseInt(numberTwo);
 		
-		var num = prompt("Enter any whole number.");
-		var numTwo = prompt("Enter another whole number.");
-		var number = parseInt(num);
-		var numberTwo = parseInt(numTwo);
+		alert("The two numbers you entered will be used in addition, subtraction, multiplication, and division.");
 		
-		alert("The second number you entered will serve as a multiple for the first number you entered.");
-		alert("Continue to see if your second number served as a multiple for your first number.");
-		
-			if(number % numberTwo == 0) {
-			alert("Your first number, " + number + ", is a multiple of " + numberTwo);
-			}
-			
-			else {
-			alert("Your first number, " + number + ", is not a multiple of " + numberTwo);
-			}
+		function addNumbers(numOne, numTwo) {	
+			return numOne + numTwo;
 		}
 		
-			correctMultiple(0, 0);
-			correctMultiple(0, 0);
-			correctMultiple(0, 0);
-			correctMultiple(0, 0);
-			
+		var answer = addNumbers(numOne, numTwo);
+		alert("The sum of your two numbers is " + answer);
+		
+		function subtractNumbers(numOne, numTwo) {	
+			return numOne - numTwo;
+		}
+		
+		var answer = subtractNumbers(numOne, numTwo);
+		alert("The difference of your two numbers is " + answer);
+		
+		function multiplyNumbers(numOne, numTwo) {	
+			return numOne * numTwo;
+		}
+		
+		var answer = multiplyNumbers(numOne, numTwo);
+		alert("The product of your two numbers is " + answer);
+		
+		function divideNumbers(numOne, numTwo) {	
+			return numOne / numTwo;
+		}
+		
+		var answer = divideNumbers(numOne, numTwo);
+		alert("The quotient of your two numbers is " + answer);
 		</script>
 	</head>
 	<body>
