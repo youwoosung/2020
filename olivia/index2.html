@@ -1,30 +1,39 @@
-  
 <html>
   <head>
     <title>Javascript</title>
     <script>   	
-        
-    function findMultiple(oneInt, twoInt) {
     
-    var numOne = prompt("Enter a number");
-    var oneInt = parseInt(numOne);
-    var numTwo = prompt("Enter another number. This number will be used to see if it is a multiple of your first number.");
-    var twoInt = parseInt(numTwo);
-      
-      if(oneInt % twoInt == 0) {
-          alert(oneInt + " is a multiple of " + twoInt);
-      }
-      else {
-          alert(oneInt + " is not a multiple of " + twoInt);
-      }
-    }    
+ 	var numOne = prompt("Enter a number");
+ 	var numTwo = prompt("Enter another number");
+ 	var intOne = parseInt(numOne);
+ 	var intTwo = parseInt(numTwo);
+ 	
+ 	function add(num1, num2) {
+ 	  return num1 + num2;
+    }
     
-    findMultiple(0, 0);
-    findMultiple(0, 0);
-    findMultiple(0, 0);
-    findMultiple(0, 0);
-    findMultiple(0, 0);
-     
+    function multiply(num1, num2) {
+      return num1 * num2;
+    }
+    
+    function divide(num1, num2) {
+      return num1 / num2;
+    }
+    
+    function subtract(num1, num2) {
+      return num1 - num2;
+    }
+    
+    var sum = add(intOne, intTwo);
+    var product = multiply(intOne, intTwo);
+    var quotient = divide(intOne, intTwo);
+    var difference = subtract(intOne, intTwo);
+    
+    alert(sum);
+    alert(product);
+    alert(quotient);
+    alert(difference);
+ 	
     </script>
   </head>
   <body>
