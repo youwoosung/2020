@@ -2,36 +2,45 @@
   <head>
     <title> Javascript Practice</title>
     <script>
-    function findMultiple(numOne, numTwo) {
-   		if(numOne % numTwo == 0) {
-  		alert("Your number is a multiple of " + numTwo);
-  	  	}
-    
-  	 	else if(numOne % numTwo != 0) {
-   	  	alert("Your number is not a multiple of " + numTwo);
-   	  	}
+	var userInput = prompt("Pick a number");
+	var userInputTwo = prompt("Pick another number");
+	var numOne = parseInt(userInput);
+	var numTwo = parseInt(userInputTwo);
+	
+	alert("The two number you just entered will be showing addition, subtraction, multiplication, and division.");
+	
+	
+	function addNum(x, y){
+		var add = x + y;
+		return add;
 	}
 	
-	var userInput = prompt("Enter a number");
-   	var numOne = parseInt(userInput);
-   	
-    findMultiple(numOne, 2);
-	findMultiple(numOne, 5);
-	findMultiple(numOne, 10);	
+	function subNum(x, y){
+		var sub = x - y;
+		return sub;
+	}
 	
-	userInput = prompt("Enter a number");
-   	numOne = parseInt(userInput);
-   	
-   	findMultiple(numOne, 2);
-	findMultiple(numOne, 5);
-	findMultiple(numOne, 10);
+	function mulNum(x, y){
+		var mul = x * y;
+		return mul;
+	}
 	
-	userInput = prompt("Enter a number");
-   	numOne = parseInt(userInput);
-   	
-   	findMultiple(numOne, 2);
-	findMultiple(numOne, 5);
-	findMultiple(numOne, 10);
+	function divNum(x, y){
+		var div = x / y;
+		return div;
+	}
+	
+	var result = addNum(numOne, numTwo);
+	alert(numOne + " plus " + numTwo + " is " + result);
+	
+	result = subNum(numOne, numTwo);
+	alert(numOne + " minus " + numTwo + " is " + result);
+	
+	result = mulNum(numOne, numTwo);
+	alert(numOne + " times " + numTwo + " is " + result);
+	
+	result = divNum(numOne, numTwo);
+	alert(numOne + " divided by " + numTwo + " is " + result);
     </script>
    </head>
    <body>
