@@ -292,6 +292,36 @@ var x = prompt("Enter a number");
     		alert("The number is Invalid.");
     	}
    	}
+	function findMultiple(numOne, numTwo) {
+   		if(numOne % numTwo == 0) {
+  		alert("Your number is a multiple of " + numTwo);
+  	  	}
+    
+  	 	else if(numOne % numTwo != 0) {
+   	  	alert("Your number is not a multiple of " + numTwo);
+   	  	}
+	}
+	
+	var userInput = prompt("Enter a number");
+   	var numOne = parseInt(userInput);
+   	
+    findMultiple(numOne, 2);
+	findMultiple(numOne, 5);
+	findMultiple(numOne, 10);	
+	
+	userInput = prompt("Enter a number");
+   	numOne = parseInt(userInput);
+   	
+   	findMultiple(numOne, 2);
+	findMultiple(numOne, 5);
+	findMultiple(numOne, 10);
+	
+	userInput = prompt("Enter a number");
+   	numOne = parseInt(userInput);
+   	
+   	findMultiple(numOne, 2);
+	findMultiple(numOne, 5);
+	findMultiple(numOne, 10);
     </script>
       <body>
     <h3>Javascript is cool</h3>
