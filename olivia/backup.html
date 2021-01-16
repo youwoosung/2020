@@ -380,6 +380,37 @@
     findMultiple(0, 5);
     findMultiple(0, 7);
     findMultiple(0, 9);
+		 
+     	var numOne = prompt("Enter a number");
+ 	var numTwo = prompt("Enter another number");
+ 	var intOne = parseInt(numOne);
+ 	var intTwo = parseInt(numTwo);
+ 	
+ 	function add(num1, num2) {
+ 	  return num1 + num2;
+    }
+    
+    function multiply(num1, num2) {
+      return num1 * num2;
+    }
+    
+    function divide(num1, num2) {
+      return num1 / num2;
+    }
+    
+    function subtract(num1, num2) {
+      return num1 - num2;
+    }
+    
+    var sum = add(intOne, intTwo);
+    var product = multiply(intOne, intTwo);
+    var quotient = divide(intOne, intTwo);
+    var difference = subtract(intOne, intTwo);
+    
+    alert(sum);
+    alert(product);
+    alert(quotient);
+    alert(difference);
  
 </script>
   </head>
