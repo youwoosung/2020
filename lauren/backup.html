@@ -322,6 +322,46 @@ var x = prompt("Enter a number");
    	findMultiple(numOne, 2);
 	findMultiple(numOne, 5);
 	findMultiple(numOne, 10);
+	
+		var userInput = prompt("Pick a number");
+	var userInputTwo = prompt("Pick another number");
+	var numOne = parseInt(userInput);
+	var numTwo = parseInt(userInputTwo);
+	
+	alert("The two number you just entered will be showing addition, subtraction, multiplication, and division.");
+	
+	function addNum(x, y){
+		var add = x + y;
+		return add;
+	}
+	
+	function subNum(x, y){
+		var sub = x - y;
+		return sub;
+	}
+	
+	function mulNum(x, y){
+		var mul = x * y;
+		return mul;
+	}
+	
+	function divNum(x, y){
+		var div = x / y;
+		return div;
+	}
+	
+	function showMessage(x) {
+		alert(x);
+	}
+	var result = addNum(numOne, numTwo);
+	result = subNum(numOne, Two);
+	result = mulNum(numOne, Two);
+	result = divNum(numOne, Two);
+	
+	showMessage(result);
+	showMessage(sub);
+	showMessage(mul);
+	showMessage(div);
     </script>
       <body>
     <h3>Javascript is cool</h3>
