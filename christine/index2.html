@@ -4,49 +4,55 @@
      
      <script>
       
-    alert("You will be picking two numbers to run through addition, subtraction, division and multiplication.");
+     var userNumOne = prompt("Pick a number");
+     var userIntOne = parseInt(userNumOne);
+     var userNumTwo = prompt("Pick another number");
+     var userIntTwo = parseInt(userNumTwo);
+        
+     function biggerNum(userIntOne, userIntTwo) {
+        var statement = userIntOne > userIntTwo ? "Your first number is greater than your second number" : "Your second number is greater than your first number";
+        alert(statement);
+     }
+     
+     biggerNum(userIntOne, userIntTwo);
+     
+     var userNumOne = prompt("Pick a number");
+     var userIntOne = parseInt(userNumOne);
+     
+     function doubledNum(userIntOne) {
+         userIntOne *= 2;
+         var statement = "Your number you inputed (" + userNumOne +") was doubled, it is now " + userIntOne; 
+         alert(statement);
+     }
+       
+     doubledNum(userIntOne);
+     
+     var userNumOne = prompt("Pick a number");
+     var userIntOne = parseInt(userNumOne);
+     
+     function tellIfMultipleOfThree(userIntOne) {
+         var test = userIntOne % 3 == 0 ? "Your number is a multiple of 3" : "Your number is not a multiple of 3";
+         alert(test);    
+     }
+     
+     tellIfMultipleOfThree(userIntOne);
     
-    var numOne = prompt("Pick your first number");
-    var numTwo = prompt("Pick your second number");
-    var userIntOne = parseInt(numOne);
-    var userIntTwo = parseInt(numTwo);
-    
-    function addNumbers(userIntOne, userIntTwo) {
-       return userIntOne + userIntTwo;
+    function myMessage(message) {
+       alert(message);  
     }
     
-    var result = addNumbers(userIntOne, userIntTwo);
-    alert("You are adding " + userIntOne + " and " + userIntTwo);
-    alert("Your result would be...");
-    alert(result);
+    myMessage("Hello my name is Christine");
+
+    var userNumOne = prompt("Pick a number");
+    var userIntOne = parseInt(userNumOne);
+    var userNumTwo = prompt("Pick a number");
+    var userIntTwo = parseInt(userNumTwo);
     
-    function subNumbers(userIntOne, userIntTwo) {
-      return userIntOne - userIntTwo; 
-    }
-    
-    var result = subNumbers(userIntOne, userIntTwo);
-    alert("You are subtracting " + userIntOne + " and " + userIntTwo);
-    alert("Your result would be...");
-    alert(result);
-    
-    
-    function divNumbers(userIntOne, userIntTwo) {
-       return userIntOne / userIntTwo;
-    }
-    
-    var result = divNumbers(userIntOne, userIntTwo);
-    alert("You are dividing " + userIntOne + " and " + userIntTwo);
-    alert("Your result would be...");
-    alert(result);
-    
-    function multiNumbers(userIntOne, userIntTwo) {
-       return userIntOne * userIntTwo; 
-    }
-    
-    var result = multiNumbers(userIntOne, userIntTwo);  
-    alert("You are mulitplying " + userIntOne + " and " + userIntTwo);
-    alert("Your result would be...");
-    alert(result);
+    alert("Your first number is " + userIntOne + " and your second number is " + userIntTwo);
+
+    biggerNum(userIntOne, userIntTwo);
+    doubledNum(userIntOne);
+    tellIfMultipleOfThree(userIntOne);
 
     
      </script>
