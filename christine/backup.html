@@ -588,50 +588,51 @@
      var userNumTwo = prompt("Pick another number");
      var userIntTwo = parseInt(userNumTwo);
         
-     function biggerNum(userIntOne, userIntTwo) {
-        var statement = userIntOne > userIntTwo ? "Your first number is greater than your second number" : "Your second number is greater than your first number";
-        alert(statement);
+     function getBigger(x, y) {
+         return x > y ? "Your first number " + x + " is greater than your second number " + y : "Your second number " + y + " is greater than your first number " + x;
      }
      
-     biggerNum(userIntOne, userIntTwo);
+     function getDouble(x) {
+         return x *= 2;
+     }
+     
+     function tellIfMultipleOfThree(x) {
+         return x % 3 == 0 ? "Your first number " + x + " is a multiple of 3" : "Your first number " + x + " is not a multiple of 3";
+     }
+     
+     function showMessage(message) {
+         return message;
+     }
+     
+     var result = getBigger(userIntOne, userIntTwo);
+     alert(result); 
+     
+     var result = getDouble(userIntOne);
+     alert("Your first number you inputed was " + userIntOne + " and it was doubled to " + result);
+     
+     var result = tellIfMultipleOfThree(userIntOne);
+     alert(result);
+     
+     var result = showMessage("My name is Christine");
+     alert(result); 
      
      var userNumOne = prompt("Pick a number");
      var userIntOne = parseInt(userNumOne);
+     var userNumTwo = prompt("Pick another number");
+     var userIntTwo = parseInt(userNumTwo);
      
-     function doubledNum(userIntOne) {
-         userIntOne *= 2;
-         var statement = "Your number you inputed (" + userNumOne +") was doubled, it is now " + userIntOne; 
-         alert(statement);
+     var biggerNum = getBigger(userIntOne, userIntTwo); 
+     var doubleNum = getDouble(biggerNum);
+     var isMultipleOfThree = tellIfMultipleOfThree(doubleNum); 
+     
+     alert(biggerNum); 
+     
+     if(isMultipleOfThree) {
+         alert("You entered " + userIntOne + " and " + userIntTwo + " and the bigger number is " + biggerNum + ", and double of it is " + doubleNum + " and it is multiple of 3")
      }
-       
-     doubledNum(userIntOne);
-     
-     var userNumOne = prompt("Pick a number");
-     var userIntOne = parseInt(userNumOne);
-     
-     function tellIfMultipleOfThree(userIntOne) {
-         var test = userIntOne % 3 == 0 ? "Your number is a multiple of 3" : "Your number is not a multiple of 3";
-         alert(test);    
+     else {
+         alert("You entered " + userIntOne + " and " + userIntTwo + " and the bigger number is " + biggerNum + ", and double of it is " + doubleNum + " and it is not a multiple of 3");
      }
-     
-     tellIfMultipleOfThree(userIntOne);
-    
-    function myMessage(message) {
-       alert(message);  
-    }
-    
-    myMessage("Hello my name is Christine");
-
-    var userNumOne = prompt("Pick a number");
-    var userIntOne = parseInt(userNumOne);
-    var userNumTwo = prompt("Pick a number");
-    var userIntTwo = parseInt(userNumTwo);
-    
-    alert("Your first number is " + userIntOne + " and your second number is " + userIntTwo);
-
-    biggerNum(userIntOne, userIntTwo);
-    doubledNum(userIntOne);
-    tellIfMultipleOfThree(userIntOne);
 	  
 
 	  
