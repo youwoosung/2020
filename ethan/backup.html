@@ -371,6 +371,60 @@
 		
 		var answer = divideNumbers(numOne, numTwo);
 		alert("The quotient of your two numbers is " + answer);
+			
+		var number = prompt("Enter a number");
+		var numberTwo = prompt("Enter another number");
+		var intNum = parseInt(number);
+		var intNt = parseInt(numberTwo);
+		
+		alert("You entered two numbers. They will go through a set of code and the result will be revealed.");
+		
+		function getBigger(userNum, userNt) {
+			return userNum > userNt ? "The first number you entered is greater than your second number" : "The second number you entered is greater than your first number";
+		}
+	
+		function getDouble(userNum) {
+			return userNum *= 2;
+		}
+
+		function tellIfMultipleOfThree(userNum) {
+			return userNum % 3 == 0 ? "The number you entered is a multiple of 3" : "The number you entered is not a multiple of 3";
+		}
+		
+		function showMessage(x) {
+			return(x);
+		}
+		
+		var answer = getBigger(intNum, intNt);
+		alert(answer);
+		
+		var answer = getDouble(intNum);
+		alert("The first number you entered was doubled and is " + answer);
+		
+		var answer = tellIfMultipleOfThree(intNum);
+		alert(answer);
+		
+		var answer = showMessage("Ethan hates doing homework");
+		alert(answer);
+		
+		var number = prompt("Enter a number");
+		var numberTwo = prompt("Enter another number");
+		var intNum = parseInt(number);
+		var intNt = parseInt(numberTwo);
+		
+		alert("The two numbers you entered will go through the same set of code and display a result");
+		
+		var biggerGet = getBigger(intNum, intNt);
+		var doubleGet = getDouble(intNum);
+		var multiple = tellIfMultipleOfThree(intNum);
+		
+		if(multiple) {
+        		alert("You entered " + intNum + " and " + intNt + ". " + biggerGet + ". The doubled version of the bigger number you entered is " + doubleGet + ". The number is a multiple of 3")
+   	    	}
+     		else {
+        		alert("You entered " + intNum + " and " + intNt + ". " + biggerGet + ". The doubled version of the bigger number you entered is " + doubleGet + ". The number is not a multiple of 3");
+     		}
+		
 		</script>
 	</head>
 	<body>
