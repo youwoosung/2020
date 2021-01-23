@@ -446,6 +446,43 @@
  	alertMessage(product);
  	alertMessage(quotient);
  	alertMessage(difference);
+		 
+	function getNum(x) {
+	   var numOne = prompt(x);
+	   var intOne = parseInt(numOne);
+	   return intOne;
+    }
+    
+    var num1 = getNum("Put in a number");
+ 	var num2 = getNum("Put in another number");
+ 	
+ 	function getBigger(x, y) {
+ 	  var greaterNum = x > y ? x : y;
+ 	  return greaterNum;	   
+ 	}
+ 	
+ 	function getDouble(a) {
+ 	   return a *= 2;
+ 	}
+ 	
+ 	function tellIfMultipleOfThree(b) {
+ 	   return b % 3 == 0 ? true : false;
+ 	}
+ 	
+ 	function showMessage(message) {
+ 	   alert(message);
+ 	}
+ 	
+ 	var biggerOfTwo = getBigger(num1, num2); 
+	var doubleNum = getDouble(biggerOfTwo);
+ 	var multipleThree = tellIfMultipleOfThree(doubleNum);	 
+ 		
+ 	if(multipleThree) {
+ 	   showMessage("Your first two numbers were " + num1 + " and " + num2 + ". The bigger number was " + biggerOfTwo + ". Your first number doubled was " + doubleNum + ". Your first number doubled was a multiple of three.");
+ 	}
+ 	else {
+ 	   showMessage("Your first two numbers were " + num1 + " and " + num2 + ". The bigger number was " + biggerOfTwo + ". Your first number doubled was " + doubleNum + ". Your first number doubled was not a multiple of three.");
+ 	}
  
 </script>
   </head>
