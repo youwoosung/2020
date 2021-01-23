@@ -2,45 +2,41 @@
   <head>
     <title> Javascript Practice</title>
     <script>
-	var userInput = prompt("Pick a number");
-	var userInputTwo = prompt("Pick another number");
-	var numOne = parseInt(userInput);
-	var numTwo = parseInt(userInputTwo);
-	
-	alert("The two number you just entered will be showing addition, subtraction, multiplication, and division.");
-	
-	
-	function addNum(x, y){
-		var add = x + y;
-		return add;
+    var userInput = prompt("Enter a number");
+    var userInputTwo = prompt ("Enter another number");
+    var numOne = parseInt(userInput);
+    var numTwo = parseInt(userInputTwo);
+    
+	function getBigger(x, y) {
+		return (x > y? x : y);
+	}
+
+	function getDouble(x) {
+		x *= 2;
+		return x;
 	}
 	
-	function subNum(x, y){
-		var sub = x - y;
-		return sub;
+	function tellIfMultipleOfThree(x) {
+		return (x % 3 == 0? true : false);
 	}
 	
-	function mulNum(x, y){
-		var mul = x * y;
-		return mul;
+	function showMessage(x) {
+		alert(x);
 	}
 	
-	function divNum(x, y){
-		var div = x / y;
-		return div;
+	
+	
+	var biggerNum = getBigger(numOne, numTwo);
+	var doubleNum = getDouble(biggerNum);
+	var isMultipleOfThree = tellIfMultipleOfThree(doubleNum);
+	
+	if(isMultipleOfThree) {
+		showMessage("You entered " + numOne + " and " + numTwo + " and the bigger number was " + biggerNum + ", and double of it is " + doubleNum + " and is a multiple of 3");
+	}
+	else {
+		showMessage("You entered " + numOne + " and " + numTwo + " and the bigger number was " + biggerNum + ", and double of it is " + doubleNum + " and it is not a multiple of 3");
 	}
 	
-	var result = addNum(numOne, numTwo);
-	alert(numOne + " plus " + numTwo + " is " + result);
-	
-	result = subNum(numOne, numTwo);
-	alert(numOne + " minus " + numTwo + " is " + result);
-	
-	result = mulNum(numOne, numTwo);
-	alert(numOne + " times " + numTwo + " is " + result);
-	
-	result = divNum(numOne, numTwo);
-	alert(numOne + " divided by " + numTwo + " is " + result);
     </script>
    </head>
    <body>
