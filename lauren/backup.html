@@ -362,6 +362,42 @@ var x = prompt("Enter a number");
 	showMessage(sub);
 	showMessage(mul);
 	showMessage(div);
+		
+	var userInput = prompt("Enter a number");
+    var userInputTwo = prompt ("Enter another number");
+    var numOne = parseInt(userInput);
+    var numTwo = parseInt(userInputTwo);
+    
+	function getBigger(x, y) {
+		return (x > y? x : y);
+	}
+
+	function getDouble(x) {
+		x *= 2;
+		return x;
+	}
+	
+	function tellIfMultipleOfThree(x) {
+		return (x % 3 == 0? true : false);
+	}
+	
+	function showMessage(x) {
+		alert(x);
+	}
+	
+	
+	
+	var biggerNum = getBigger(numOne, numTwo);
+	var doubleNum = getDouble(biggerNum);
+	var isMultipleOfThree = tellIfMultipleOfThree(doubleNum);
+	
+	if(isMultipleOfThree) {
+		showMessage("You entered " + numOne + " and " + numTwo + " and the bigger number was " + biggerNum + ", and double of it is " + doubleNum + " and is a multiple of 3");
+	}
+	else {
+		showMessage("You entered " + numOne + " and " + numTwo + " and the bigger number was " + biggerNum + ", and double of it is " + doubleNum + " and it is not a multiple of 3");
+	}
+	
     </script>
       <body>
     <h3>Javascript is cool</h3>
