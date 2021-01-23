@@ -3,37 +3,49 @@
     <title>Javascript</title>
     <script>   	
     
- 	var numOne = prompt("Enter a number");
- 	var numTwo = prompt("Enter another number");
- 	var intOne = parseInt(numOne);
- 	var intTwo = parseInt(numTwo);
+	function getNumOne() {
+	   var numOne = prompt("Put in a number");
+	   var intOne = parseInt(numOne);
+	   return intOne;
+    }
+    
+  function getNumTwo() {
+     var numTwo = prompt("Put in another number");
+     var intTwo = parseInt(numTwo);
+     return intTwo;
+    }
+    
+  var num1 = getNumOne();
+ 	var num2 = getNumTwo();
  	
- 	function add(num1, num2) {
- 	  return num1 + num2;
-    }
-    
-    function multiply(num1, num2) {
-      return num1 * num2;
-    }
-    
-    function divide(num1, num2) {
-      return num1 / num2;
-    }
-    
-    function subtract(num1, num2) {
-      return num1 - num2;
-    }
-    
-    var sum = add(intOne, intTwo);
-    var product = multiply(intOne, intTwo);
-    var quotient = divide(intOne, intTwo);
-    var difference = subtract(intOne, intTwo);
-    
-    alert(sum);
-    alert(product);
-    alert(quotient);
-    alert(difference);
+ 	function getBigger(x, y) {
+ 	   var greaterNum = x > y ? x : y;
+ 	   return greaterNum;	   
+ 	}
  	
+ 	function getDouble(a) {
+ 	   return a *= 2;
+ 	}
+ 	
+ 	function tellIfMultipleOfThree(b) {
+ 	   return b % 3 == 0 ? true : false;
+ 	}
+ 	
+ 	function showMessage(message) {
+ 	   alert(message);
+ 	}
+ 	
+ 	var biggerOfTwo = getBigger(num1, num2); 
+	var doubleNum = getDouble(biggerOfTwo);
+ 	var multipleThree = tellIfMultipleOfThree(doubleNum);	 
+ 		
+ 	if(multipleThree) {
+ 	   showMessage("Your first two numbers were " + num1 + " and " + num2 + ". The bigger number was " + biggerOfTwo + ". Your first number doubled was " + doubleNum + ". Your first number doubled was a multiple of three.");
+ 	}
+ 	else {
+ 	   showMessage("Your first two numbers were " + num1 + " and " + num2 + ". The bigger number was " + biggerOfTwo + ". Your first number doubled was " + doubleNum + ". Your first number doubled was not a multiple of three.");
+ 	}
+ 	  
     </script>
   </head>
   <body>
