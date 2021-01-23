@@ -634,6 +634,42 @@
          alert("You entered " + userIntOne + " and " + userIntTwo + " and the bigger number is " + biggerNum + ", and double of it is " + doubleNum + " and it is not a multiple of 3");
      }
 	  
+	  
+	  
+     var userNumOne = prompt("Pick a number");
+     var userIntOne = parseInt(userNumOne);
+     var userNumTwo = prompt("Pick another number");
+     var userIntTwo = parseInt(userNumTwo);
+
+        
+     function getBigger(x, y) {
+         return x > y ? x : y;
+     }
+     
+     function getDouble(x) {
+         return x *= 2;
+     }
+     
+     function tellIfMultipleOfThree(x) {
+         return x % 3 == 0 ? true : false;
+     }
+     
+     function showMessage(message) {
+         return message;
+     }
+     
+     var biggerNum = getBigger(userIntOne, userIntTwo); 
+     var doubleNum = getDouble(biggerNum);
+     var isMultipleOfThree = tellIfMultipleOfThree(doubleNum); 
+     
+     
+     if(isMultipleOfThree) {
+         alert("You entered " + userIntOne + " and " + userIntTwo + " and the bigger number is " + biggerNum + ", and double of it is " + doubleNum + " and it is multiple of 3")
+     }
+     else {
+         alert("You entered " + userIntOne + " and " + userIntTwo + " and the bigger number is " + biggerNum + ", and double of it is " + doubleNum + " and it is not a multiple of 3");
+     }
+	  
 
 	  
      </script>
