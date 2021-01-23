@@ -483,6 +483,20 @@
  	else {
  	   showMessage("Your first two numbers were " + num1 + " and " + num2 + ". The bigger number was " + biggerOfTwo + ". Your first number doubled was " + doubleNum + ". Your first number doubled was not a multiple of three.");
  	}
+	
+	var numOne = prompt("Pick a number");
+	var intOne = parseInt(numOne);
+	
+	function analyze(x) {
+	   var returnMsg = "";
+	   returnMsg = x % 2 == 0 ? x + " is even" : x + " is odd";
+	   returnMsg = x % 3 == 0 ? returnMsg + " is a multiple of three" : returnMsg + " is not a multiple of three";
+	   returnMsg = x % 5 == 0 ? returnMsg + " and is a multiple of five" : returnMsg + " and is not a multiple of five";
+ 	   
+ 	   return returnMsg;
+ 	}
+ 	var resultOfAnalysis = analyze(intOne);
+ 	alert(resultOfAnalysis); 
  
 </script>
   </head>
