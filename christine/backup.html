@@ -670,6 +670,21 @@
          alert("You entered " + userIntOne + " and " + userIntTwo + " and the bigger number is " + biggerNum + ", and double of it is " + doubleNum + " and it is not a multiple of 3");
      }
 	  
+     var userNumOne = prompt("Pick a number");
+     var userIntOne = parseInt(userNumOne); 
+     
+     function analyzeNum(x) {
+         var returningMsg = "";
+         
+         returningMsg += x % 2 == 0 ? "Your number " + x + " is an even number " : " Your number " + x + " is an odd number";
+         returningMsg += x % 3 == 0 ? " Your number " + x + " is a multiple of 3 " : " Your number " + x + " is not a multiple of 3";
+         returningMsg += x % 5 == 0 ? " Your number " + x + " is a multiple of 5" : " Your number " + x + " is not a multiple of 5";
+         
+         return returningMsg; 
+     }
+     
+     var result = analyzeNum(userIntOne);
+     alert(result);
 
 	  
      </script>
