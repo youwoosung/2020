@@ -5,9 +5,9 @@
      <script>
       
      var userNumOne = prompt("Pick a number");
-     var userIntOne = parseInt(userNumOne);
+     var numOne = parseInt(userNumOne);
      var userNumTwo = prompt("Pick another number");
-     var userIntTwo = parseInt(userNumTwo);
+     var numTwo = parseInt(userNumTwo);
         
      function getBigger(x, y) {
          return x > y ? x : y;
@@ -25,17 +25,27 @@
          return message;
      }
      
-     var biggerNum = getBigger(userIntOne, userIntTwo); 
-     var doubleNum = getDouble(biggerNum);
-     var isMultipleOfThree = tellIfMultipleOfThree(doubleNum); 
+     function testAll(x, y) { 
+       var endMsg = showMessage("");  
+       var biggerNum = getBigger(x, y); 
+       var doubleNum = getDouble(biggerNum);
+       var isMultipleOfThree = tellIfMultipleOfThree(doubleNum);     
+        
+       endMsg += "Your number was " + x + " and " + y + ". "; 
+       endMsg += " The bigger number was " + biggerNum + " and double that is " + doubleNum + ". ";
+       endMsg += isMultipleOfThree ? " Also, you number was not a multiple of three" : " Also, your number is not a multiple of three"; 
+       
+       return endMsg;
+    }
+    
+     var result = testAll(numOne, numTwo);
+     alert(result);
      
+     var result = testAll(numOne * 2, numTwo * 2);
+     alert(result);
      
-     if(isMultipleOfThree) {
-         alert("You entered " + userIntOne + " and " + userIntTwo + " and the bigger number is " + biggerNum + ", and double of it is " + doubleNum + " and it is multiple of 3")
-     }
-     else {
-         alert("You entered " + userIntOne + " and " + userIntTwo + " and the bigger number is " + biggerNum + ", and double of it is " + doubleNum + " and it is not a multiple of 3");
-     }
+     var result = testAll(numOne * 3, numTwo * 3);
+     alert(result);
 
     
      </script>
