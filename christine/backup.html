@@ -685,6 +685,49 @@
      
      var result = analyzeNum(userIntOne);
      alert(result);
+	  
+     var userNumOne = prompt("Pick a number");
+     var numOne = parseInt(userNumOne);
+     var userNumTwo = prompt("Pick another number");
+     var numTwo = parseInt(userNumTwo);
+        
+     function getBigger(x, y) {
+         return x > y ? x : y;
+     }
+     
+     function getDouble(x) {
+         return x *= 2;
+     }
+     
+     function tellIfMultipleOfThree(x) {
+         return x % 3 == 0 ? true : false;
+     }
+     
+     function showMessage(message) {
+         return message;
+     }
+     
+     function testAll(x, y) { 
+       var endMsg = showMessage("");  
+       var biggerNum = getBigger(x, y); 
+       var doubleNum = getDouble(biggerNum);
+       var isMultipleOfThree = tellIfMultipleOfThree(doubleNum);     
+        
+       endMsg += "Your number was " + x + " and " + y + ". "; 
+       endMsg += " The bigger number was " + biggerNum + " and double that is " + doubleNum + ". ";
+       endMsg += isMultipleOfThree ? " Also, you number was not a multiple of three" : " Also, your number is not a multiple of three"; 
+       
+       return endMsg;
+    }
+    
+     var result = testAll(numOne, numTwo);
+     alert(result);
+     
+     var result = testAll(numOne * 2, numTwo * 2);
+     alert(result);
+     
+     var result = testAll(numOne * 3, numTwo * 3);
+     alert(result);
 
 	  
      </script>
