@@ -2,6 +2,13 @@
 	<head>
 		<title>Javascript Practice</title>
 		<script>
+		var number = prompt("Enter a number");
+		var numberTwo = prompt("Enter another number");
+		var intNum = parseInt(number);
+		var intNt = parseInt(numberTwo);
+		
+		alert("The two numbers you entered will go through a set of code and display some results");
+		
 		function getBigger(userNum, userNt) {
 			return userNum > userNt ? userNum : userNt;
 		}
@@ -15,26 +22,30 @@
 		}
 		
 		function showMessage(x) {
-			alert(x);
+			return x;
 		}
+	
+		function testAll(userNum, userNt) {
+			var resultMsg = showMessage("You entered the numbers " + userNum + " and " + userNt + ".");
+			var biggerGet = getBigger(userNum, userNt);
+			var doubleGet = getDouble(biggerGet);
+			var multiple = tellIfMultipleOfThree(doubleGet);
 		
-		var number = prompt("Enter a number");
-		var numberTwo = prompt("Enter another number");
-		var intNum = parseInt(number);
-		var intNt = parseInt(numberTwo);
-		
-		alert("The two numbers you entered will go through the same set of code and display a result");
-		
-		var biggerGet = getBigger(intNum, intNt);
-		var doubleGet = getDouble(biggerGet);
-		var multiple = tellIfMultipleOfThree(doubleGet);
-		
-		if(multiple) {
-        		showMessage("You entered " + intNum + " and " + intNt + ". The bigger number is " + biggerGet + ". The doubled version of the bigger number you entered is " + doubleGet + ". The number is a multiple of 3.")
-   	    	}
-     		else {
-        		showMessage("You entered " + intNum + " and " + intNt + ". The bigger number is " + biggerGet + ". The doubled version of the bigger number you entered is " + doubleGet + ". The number is not a multiple of 3.");
+			resultMsg = resultMsg + " The bigger number is " + biggerGet + ".";
+			resultMsg = resultMsg + " The doubled version of " + biggerGet + " is " + doubleGet + ".";
+			resultMsg = multiple ? resultMsg + " The number is a multiple of three." : resultMsg + " The number is not a multiple of three.";
+     		
+     			return resultMsg;
      		}
+     	
+     		var result = testAll(intNum, intNt);
+     		alert(result);
+     	
+     		var result = testAll(intNum * 2, intNt * 2);
+     		alert(result);
+     	
+     		var result = testAll(intNum * 3, intNt * 3);
+     		alert(result);
 		
 		</script>
 	</head>
