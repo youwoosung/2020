@@ -497,6 +497,54 @@
  	}
  	var resultOfAnalysis = analyze(intOne);
  	alert(resultOfAnalysis); 
+		 
+	function getNum(x) {
+	   var numOne = prompt(x);
+	   var intOne = parseInt(numOne);
+	   return intOne;
+    }
+    
+    var num1 = getNum("Put in a number");
+ 	var num2 = getNum("Put in another number");
+ 	
+ 	function getBigger(x, y) {
+ 	  var greaterNum = x > y ? x : y;
+ 	  return greaterNum;	   
+ 	}
+ 	
+ 	function getDouble(a) {
+ 	   return a *= 2;
+ 	}
+ 	
+ 	function tellIfMultipleOfThree(b) {
+ 	   return b % 3 == 0 ? true : false;
+ 	}
+ 	
+ 	function showMessage(message) {
+ 	   return message;
+ 	}
+ 	
+ 	function testAll(x, y) { 
+ 	   var endMsg = showMessage("The numbers you put in were " + x + " and " + y + ".");	
+ 	   var biggerOfTwo = getBigger(x, y); 
+	   var doubleNum = getDouble(biggerOfTwo);
+ 	   var multipleThree = tellIfMultipleOfThree(doubleNum);	 
+ 		
+ 	   endMsg = endMsg + " Out of the two numbers you put in " + biggerOfTwo + " was bigger. ";
+ 	   endMsg = endMsg + doubleNum + " is your bigger number doubled.";
+ 	   endMsg = multipleThree ? endMsg + " Lastly, your number is a multiple of three." : endMsg + " Lastly, your number is not a multiple of three.";
+ 	   
+ 	   return endMsg;
+ 	}
+ 	
+ 	var testResult = testAll(num1, num2);
+ 	alert(testResult);
+ 	
+ 	var testResult = testAll(num1*2, num2*2);
+ 	alert(testResult);
+ 	
+ 	var testResult = testAll(num1*3, num2*3);
+ 	alert(testResult);
  
 </script>
   </head>
