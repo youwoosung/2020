@@ -2,51 +2,118 @@
 	<head>
 		<title>Javascript Practice</title>
 		<script>
-		var number = prompt("Enter a number");
-		var numberTwo = prompt("Enter another number");
-		var intNum = parseInt(number);
-		var intNt = parseInt(numberTwo);
-		
-		alert("The two numbers you entered will go through a set of code and display some results");
-		
-		function getBigger(userNum, userNt) {
-			return userNum > userNt ? userNum : userNt;
-		}
-	
-		function getDouble(userNum) {
-			return userNum *= 2;
-		}
-
-		function tellIfMultipleOfThree(userNum) {
-			return userNum % 3 == 0 ? true : false;
-		}
-		
-		function showMessage(x) {
-			return x;
-		}
-	
-		function testAll(userNum, userNt) {
-			var resultMsg = showMessage("You entered the numbers " + userNum + " and " + userNt + ".");
-			var biggerGet = getBigger(userNum, userNt);
-			var doubleGet = getDouble(biggerGet);
-			var multiple = tellIfMultipleOfThree(doubleGet);
-		
-			resultMsg = resultMsg + " The bigger number is " + biggerGet + ".";
-			resultMsg = resultMsg + " The doubled version of " + biggerGet + " is " + doubleGet + ".";
-			resultMsg = multiple ? resultMsg + " The number is a multiple of three." : resultMsg + " The number is not a multiple of three.";
-     		
-     			return resultMsg;
-     		}
+		<table border=1>
+	<tr>
+		<td colspan="3"></td>
+		<td>c</td>
+	</tr>
+     	<tr>
+     	<tr>
+     		<td>1</td>
+     		<td>2</td>
+     		<td>3</td>
+     		<td>/</td>
+     	</tr>
+		<tr>
+     		<td>4</td>
+     		<td>5</td>
+     		<td>6</td>
+     		<td>-</td>
+     	</tr>
+     	<tr>
+     		<td>7</td>
+     		<td>8</td>
+     		<td>9</td>
+     		<td>+</td>
+     	</tr>
+     	<tr>
+     		<td></td>
+     		<td>0</td>
+     		<td>=</td>
+     		<td>*</td>
+     	</tr>
+     	</table>
+     		<table border=1>
+	<tr>
+		<td colspan="4"></td>
+		<td>`</td>
+	</tr>
+     	<tr>
+     		<td>y=</td>
+     		<td>window</td>
+     		<td>zoom</td>
+     		<td>trace</td>
+     		<td>graph</td>
+     	</tr>
+     	<tr>
+     		<td>2nd</td>
+     		<td>mode</td>
+     		<td>del</td>
+     	</tr>
+     	<tr>
+     		<td>alpha</td>
+     		<td>X,T,Ø,n</td>
+     		<td>stat</td>
+     	</tr>
+     	<tr>
+     		<td>math</td>
+     		<td>apps</td>
+     		<td>prgm</td>
+     		<td>vars</td>
+     		<td>clear</td>
+     	</tr>
+     	<tr>
+     		<td>x^-1</td>
+     		<td>sin</td>
+     		<td>cos</td>
+     		<td>tan</td>
+     		<td>^</td>
+     	</tr>
+     	<tr>
+     		<td>x^2</td>
+     		<td>,</td>
+     		<td>(</td>
+     		<td>)</td>
+     		<td>/</td>
+     	</tr>
+     	<tr>
+     		<td>log</td>
+     		<td>7</td>
+     		<td>8</td>
+     		<td>9</td>
+     		<td>*</td>
+     	</tr>
+     	<tr>
+     		<td>In</td>
+     		<td>4</td>
+     		<td>5</td>
+     		<td>6</td>
+     		<td>-</td>
+     	</tr>
+     	<tr>
+     		<td>sto</td>
+     		<td>1</td>
+     		<td>2</td>
+     		<td>3</td>
+     		<td>+</td>
+     	</tr>
+     	<tr>
+     		<td>on</td>
+     		<td>0</td>
+     		<td>.</td>
+     		<td>(-)</td>
+     		<td>enter</td>
+     	</tr>
+     	</table>
      	
-     		var result = testAll(intNum, intNt);
-     		alert(result);
-     	
-     		var result = testAll(intNum * 2, intNt * 2);
-     		alert(result);
-     	
-     		var result = testAll(intNum * 3, intNt * 3);
-     		alert(result);
+     	<input type="text" id="foot" name="txt"/>
+	<button onclick="getValue();">Click Me</button>
+	<script>
 		
+	function getValue() {
+		var toe = document.getElementById("foot").value;
+		alert(toe);
+	}
 		</script>
 	</head>
 	<body>
