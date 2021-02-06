@@ -1,54 +1,48 @@
 <html>
   <head>
      <title>Javascript Practice</title>
-     
      <script>
-      
-     var userNumOne = prompt("Pick a number");
-     var numOne = parseInt(userNumOne);
-     var userNumTwo = prompt("Pick another number");
-     var numTwo = parseInt(userNumTwo);
-        
-     function getBigger(x, y) {
-         return x > y ? x : y;
-     }
      
-     function getDouble(x) {
-         return x *= 2;
-     }
-     
-     function tellIfMultipleOfThree(x) {
-         return x % 3 == 0 ? true : false;
-     }
-     
-     function showMessage(message) {
-         return message;
-     }
-     
-     function testAll(x, y) { 
-       var endMsg = showMessage("");  
-       var biggerNum = getBigger(x, y); 
-       var doubleNum = getDouble(biggerNum);
-       var isMultipleOfThree = tellIfMultipleOfThree(doubleNum);     
-        
-       endMsg += "Your number was " + x + " and " + y + ". "; 
-       endMsg += " The bigger number was " + biggerNum + " and double that is " + doubleNum + ". ";
-       endMsg += isMultipleOfThree ? " Also, your number is a multiple of three" : " Also, your number is not a multiple of three"; 
-       
-       return endMsg;
-    }
-    
-     var result = testAll(numOne, numTwo);
-     alert(result);
-     
-     var result = testAll(numOne * 2, numTwo * 2);
-     alert(result);
-     
-     var result = testAll(numOne * 3, numTwo * 3);
-     alert(result);
+     <input type="text" id="txt" name="txt"/> 
+     <button onclick="getVal();">click me</button>
 
-    
+        function getVal() {
+           var txt = document.getElementById('txt').value;
+           alert(txt);
+        }
      </script>
+     
+     <table border=1>
+   <tr>
+      <td colspan="3"><input type="text" id="result"/></td>
+      <td><input type="button" value="c" onclick="clr()"/></td>
+   </tr>
+   <tr>
+      <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+      <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+      <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+      <td><input type="button" value="/" onclick="dis('/')"/> </td> 
+   </tr>
+   <tr>
+      <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+      <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+      <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+      <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+   </tr>
+   <tr>
+      <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+      <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+      <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+      <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+   </tr>
+   <tr>
+      <td><input type="button" value="." onclick="dis('.')"/> </td> 
+      <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+      <td><input type="button" value="=" onclick="solve()"/> </td> 
+      <td><input type="button" value="*" onclick="dis('*')"/> </td> 
+   </tr>
+    </table>    
+     
      
     </head>
    <body>
