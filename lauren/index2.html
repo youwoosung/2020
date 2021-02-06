@@ -1,50 +1,42 @@
 <html>
   <head>
     <title> Javascript Practice</title>
-    <script>
-    var userInput = prompt("Enter a number");
-    var userInputTwo = prompt("Enter another number");
-    var numOne = parseInt(userInput);
-    var numTwo = parseInt(userInputTwo);
-    
-    function getBigger(x, y) {
-    	return (x > y ? x: y);
-    }
-    
-    function getDouble(x) {
-    	return x *= 2;
-    }
-    
-    function tellIfMultipleOfThree(x) {
-    	return (x % 3 == 0 ? true : false);
-    }
-    
-    function showMessage(x) {
-    	alert(x);
-    }
-    
-    function testAll(x, y) {
-    	var biggerNum = getBigger(x, y);
-    	var doubleNum = getDouble(biggerNum);
-    	var isMultipleOfThree = tellIfMultipleOfThree(doubleNum);
-    
-    	if(isMultipleOfThree) {
-    		showMessage("You entered " + x + " and " + y + " and the bigger number was " + biggerNum + ", and double of it is " + doubleNum + " and is a multiple of 3");
-    	}
-    	else {
-    		showMessage("You entered " + x + " and " + y + " and the bigger number was " + biggerNum + ", and double of it is " + doubleNum + " and it is not a multiple of 3");
-    	}
-    }
-    
-    testAll(numOne, numTwo);
-    testAll(numOne * 2, numTwo * 2);
-    testAll(numOne * 3, numTwo * 3);
-    
-    </script>
-   </head>
+		<script>
+     		function getVal() {
+     			var hello = document.getElementById('lauren').value;
+     			alert(hello);
+     		}
+     	</script>
+  </head>
    <body>
-     <h3>Javascript is cool</h3>
-     <br>
-     <input type= "submit" value= "Click me!!!">
+     <table border = 1>
+     	<tr>
+     		<td colspan = "3"><input type="text" id="lauren" name="txt"/>
+     		</td>
+     		<td><button>C</button></td>
+     	</tr>
+     	<tr>
+     		<td><button>1</button></td>
+     		<td><button>2</button></td>
+     		<td><button>3</button></td>
+     		<td><button>/</button></td>
+     	</tr>
+     	<tr>
+     		<td><button>4</button></td>
+     		<td><button>5</button></td>
+     		<td><button>6</button></td>
+     		<td><button>-</button></td>
+     	</tr>
+     	<tr>
+     		<td><button>7</button></td>
+     		<td><button>8</button></td>
+     		<td><button>9</button></td>
+     		<td><button>+</button></td>
+     	</tr>
+     	<tr>
+     		<td><button>.</button></td>
+     		<td><button>0</button></td>
+     		<td><button onclick="getVal();">=</button></td>
+     		<td><button>*</button></td>
    </body>
 </html>
