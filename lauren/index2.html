@@ -2,9 +2,28 @@
   <head>
     <title> Javascript Practice</title>
 		<script>
-     		function getVal() {
-     			var hello = document.getElementById('lauren').value;
-     			alert(hello);
+		var numOne;
+		var numTwo;
+		
+		
+     		function dis(x) {
+     			document.getElementById('lauren').value=x;
+     				userInt = parseInt(x);
+     				if(numOne >= 0) {
+     					numTwo = userInt;
+     				}
+     				else {
+     					numOne = userInt;
+     				}
+     		}
+     		function clearInput() {
+     			document.getElementById('lauren').value = ''
+     			numOne = -1;
+     			numTwo = -1;
+     		}
+     		function equal() {
+     			var addNum = numOne + numTwo;
+     			alert("You entered " + numOne + " and " + numTwo + ", and the sum of the numbers is " + addNum);
      		}
      	</script>
   </head>
@@ -13,30 +32,30 @@
      	<tr>
      		<td colspan = "3"><input type="text" id="lauren" name="txt"/>
      		</td>
-     		<td><button>C</button></td>
+     		<td><button onclick="clearInput();">C</button></td>
      	</tr>
      	<tr>
-     		<td><button>1</button></td>
-     		<td><button>2</button></td>
-     		<td><button>3</button></td>
-     		<td><button>/</button></td>
+     		<td><button onclick="dis('1');">1</button></td>
+     		<td><button onclick="dis('2');">2</button></td>
+     		<td><button onclick="dis('3');">3</button></td>
+     		<td><button onclick="dis('/');">/</button></td>
      	</tr>
      	<tr>
-     		<td><button>4</button></td>
-     		<td><button>5</button></td>
-     		<td><button>6</button></td>
-     		<td><button>-</button></td>
+     		<td><button onclick="dis('4');">4</button></td>
+     		<td><button onclick="dis('5');">5</button></td>
+     		<td><button onclick="dis('6');">6</button></td>
+     		<td><button onclick="dis('-');">-</button></td>
      	</tr>
      	<tr>
-     		<td><button>7</button></td>
-     		<td><button>8</button></td>
-     		<td><button>9</button></td>
-     		<td><button>+</button></td>
+     		<td><button onclick="dis('7');">7</button></td>
+     		<td><button onclick="dis('8');">8</button></td>
+     		<td><button onclick="dis('9');">9</button></td>
+     		<td><button onclick="dis('+');">+</button></td>
      	</tr>
      	<tr>
-     		<td><button>.</button></td>
-     		<td><button>0</button></td>
-     		<td><button onclick="getVal();">=</button></td>
-     		<td><button>*</button></td>
+     		<td><button onclick="dis('.');">.</button></td>
+     		<td><button onclick="dis('0');">0</button></td>
+     		<td><button onclick="equal();">=</button></td>
+     		<td><button onclick="dis('*');">*</button></td>
    </body>
 </html>
