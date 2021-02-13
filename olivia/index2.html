@@ -3,18 +3,32 @@
     <title>Javascript</title>  	
 	<script>
 			
+		var num1;
+		var num2;
+		
 		function getValue(x) {
 		   document.getElementById("hi").value = x;
+		   if(num1 >= 0) {
+		      num2 = parseInt(document.getElementById("hi").value);
+		   }
+		   else {
+		      num1 = parseInt(document.getElementById("hi").value);
+		   }
 		}
 		function clearInput() {
-		   document.getElementById("hi").vlaue = '';
+		   document.getElementById("hi").value = ' ';
+		   num1 = undefined;
 		}
+		function solve() {
+		   document.getElementById("hi").value = num1 + num2;
+		}
+		      
 		</script>
 			
 			<table border=1>
 	<tr>
 			<td colspan="3"><input type="text" id="hi" name="txt"/></td>
-			<td><input type="button" value="c" onclick="clearInput();"/></td>
+			<td><input type="button" value="c" onclick="clearInput()"/></td>
 	</tr>
 	<tr>
 	  <td><input type="button" value="1" onclick="getValue('1')"/></td>
@@ -37,7 +51,7 @@
 	<tr>
 	  <td><input type="button" value="." onclick="getValue('.')"/></td>
 	  <td><input type="button" value="0" onclick="getValue('0')"/></td>
-	  <td><input type="button" value="=" onclick="getValue('=')"/></td>
+	  <td><input type="button" value="=" onclick="solve()"/></td>
 	  <td><input type="button" value="*" onclick="getValue('*')"/></td>
 	</tr>
 	</table>
