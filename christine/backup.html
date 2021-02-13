@@ -731,13 +731,30 @@
 	  
 	  
      
-     <input type="text" id="txt" name="txt"/> 
-     <button onclick="getVal();">click me</button>
-
-        function getVal() {
-           var txt = document.getElementById('txt').value;
-           alert(txt);
+ var numOne;
+        var numTwo;
+        
+        
+        
+        function dis(val) { 
+           document.getElementById("result").value = val;
+                if(numOne >= 0) {
+                     numTwo = parseInt(val); 
+                }
+                else {
+                     numOne = parseInt(val); 
+           }
+        } 
+        function clr() { 
+            document.getElementById("result").value = "" 
+            numOne = -1;
+            numTwo = -1;
+        } 
+        function solve() {
+            var answer = numOne + numTwo; 
+            alert("You entered " + numOne + " and " + numTwo + ", and the sum of the number is " + answer); 
         }
+        
      </script>
      
      <table border=1>
@@ -766,7 +783,7 @@
    <tr>
       <td><input type="button" value="." onclick="dis('.')"/> </td> 
       <td><input type="button" value="0" onclick="dis('0')"/> </td> 
-      <td><input type="button" value="=" onclick="solve()"/> </td> 
+      <td><input type="button" value="=" onclick="solve('=')"/> </td> 
       <td><input type="button" value="*" onclick="dis('*')"/> </td> 
    </tr>
     </table>    
