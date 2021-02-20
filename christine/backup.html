@@ -833,6 +833,37 @@
       <td><input type="button" value="*" onclick="selectedOperator('*')"/> </td> 
    </tr>
     </table>   
+	
+	
+	<script>
+         function changeColor() {
+            var color = document.getElementById('colorInputText').value;
+            document.body.style.backgroundColor = color;  
+         }
+     </script>  
+     
+     <input type="text" id="colorInputText">
+     
+     <input type="button" id="colorButton" value="Click to Change your color" onclick="changeColor()">
+	
+	
+	
+	
+	<select onChange="color(this.value)">
+         <option value="">Color</option>
+         <option value="#7FFFD4">Aquamarine</option>
+         <option value="#5F9EA0">Cadet Blue</option>
+         <option value="#DC143C">Crimson</option>
+         <option value="#8FBC8F">Dark Sea Green</option>
+         <option value="#9932CC">Dark Orchid</option>
+         <option value="#CD5C5C">Indian Red</option>
+      </select>   
+      
+     <script>
+         function color(value) {
+            document.body.style.backgroundColor=value; 
+         }
+     </script>
 	  
 	  
 	  
