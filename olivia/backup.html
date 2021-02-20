@@ -545,6 +545,85 @@
  	
  	var testResult = testAll(num1*3, num2*3);
  	alert(testResult);
+		 
+			var num1;
+		var num2;
+		var operator;
+		
+		function getValue(x) {
+		   document.getElementById("hi").value += x;
+		}
+		
+		function operate(x) {
+		   operator = x;
+		   var userNum = parseFloat(document.getElementById("hi").value);
+		   num1 = userNum;
+		   document.getElementById("hi").value = '';
+		   
+		}
+		
+		function clearInput() {
+		   document.getElementById("hi").value = ' ';
+		   num1 = undefined;
+		}
+
+		function solve() {
+		   var userNum = parseFloat(document.getElementById("hi").value);
+			
+		   num2 = userNum; 
+		   document.getElementById("hi").value = '';
+				
+		   var sum = num1 + num2;
+		   var difference = num1 - num2;
+		   var product = num1 * num2;
+		   var quotient = num1 / num2;
+			
+		   if(operator == '+') {
+			  document.getElementById("hi").value = sum;
+		   }
+		   else if(operator == '-') {
+			  document.getElementById("hi").value = difference;
+		   }
+		   else if(operator == '*') {
+			  document.getElementById("hi").value = product;
+		   }
+		   else {
+			  document.getElementById("hi").value = quotient;
+		   }
+	    }
+		      
+		</script>
+			
+			<table border=1>
+	<tr>
+			<td colspan="3"><input type="text" id="hi" name="txt"/></td>
+			<td><input type="button" value="c" onclick="clearInput()"/></td>
+	</tr>
+	<tr>
+	  <td><input type="button" value="1" onclick="getValue('1')"/></td>
+	  <td><input type="button" value="2" onclick="getValue('2')"/></td>
+	  <td><input type="button" value="3" onclick="getValue('3')"/></td>
+	  <td><input type="button" value="/" onclick="operate('/')"/></td>
+	</tr>
+	<tr>
+	  <td><input type="button" value="4" onclick="getValue('4')"/></td>
+	  <td><input type="button" value="5" onclick="getValue('5')"/></td>
+	  <td><input type="button" value="6" onclick="getValue('6')"/></td>
+	  <td><input type="button" value="-" onclick="operate('-')"/></td>
+	</tr>
+	<tr>
+	  <td><input type="button" value="7" onclick="getValue('7')"/></td>
+	  <td><input type="button" value="8" onclick="getValue('8')"/></td>
+	  <td><input type="button" value="9" onclick="getValue('9')"/></td>
+	  <td><input type="button" value="+" onclick="operate('+')"/></td>
+	</tr>
+	<tr>
+	  <td><input type="button" value="." onclick="getValue('.')"/></td>
+	  <td><input type="button" value="0" onclick="getValue('0')"/></td>
+	  <td><input type="button" value="=" onclick="solve()"/></td>
+	  <td><input type="button" value="*" onclick="operate('*')"/></td>
+	</tr>
+	</table>
  
 </script>
   </head>
