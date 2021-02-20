@@ -4,17 +4,20 @@
 		<script>
 		var numOne;
 		var numTwo;
-		
+		var globalOper;
 		
      		function dis(x) {
-     			document.getElementById('lauren').value=x;
-     				userInt = parseInt(x);
-     				if(numOne >= 0) {
-     					numTwo = userInt;
-     				}
-     				else {
-     					numOne = userInt;
-     				}
+     		
+     			document.getElementById('lauren').value += x;
+     		}
+     		function selectOperator(operator) {
+     			globalOper = operator;
+     			
+     			var userEntered = document.getElementById('lauren').value;
+     			var intUserEntered = parseInt(userEntered);
+     			
+     			numOne = intUserEntered;
+     			document.getElementById('lauren').value = ''
      		}
      		function clearInput() {
      			document.getElementById('lauren').value = ''
@@ -22,8 +25,29 @@
      			numTwo = -1;
      		}
      		function equal() {
-     			var addNum = numOne + numTwo;
-     			alert("You entered " + numOne + " and " + numTwo + ", and the sum of the numbers is " + addNum);
+     			var userEnteredNum = document.getElementById('lauren').value;
+     			var intUserEnteredNum = parseInt(userEnteredNum);
+     			
+     			numTwo = intUserEnteredNum;
+     			document.getElementById('lauren').value = ''
+     			
+     			var sum = numOne + numTwo;
+     			var sub = numOne - numTwo;
+     			var mul = numOne * numTwo;
+     			var div = numOne / numTwo;
+     			
+     			if(globalOper == "+") {
+     				alert("You entered " + numOne + " and " + numTwo + ", and the sum of the number is " + sum);
+     			}
+     			else if (globalOper == "-") {
+     				alert("You entered " + numOne + " and " + numTwo + ", and the difference of the number is " + sub);
+     			}
+     			else if(globalOper == "*") {
+     				alert("You entered " + numOne + " and " + numTwo + ", and the times of the number is " + mul);
+     			}
+     			else {
+     				alert("You entered " + numOne + " and " + numTwo + ", and the quotient of the number is " + div);
+     			}
      		}
      	</script>
   </head>
@@ -38,24 +62,24 @@
      		<td><button onclick="dis('1');">1</button></td>
      		<td><button onclick="dis('2');">2</button></td>
      		<td><button onclick="dis('3');">3</button></td>
-     		<td><button onclick="dis('/');">/</button></td>
+     		<td><button onclick="selectOperator('/');">/</button></td>
      	</tr>
      	<tr>
      		<td><button onclick="dis('4');">4</button></td>
      		<td><button onclick="dis('5');">5</button></td>
      		<td><button onclick="dis('6');">6</button></td>
-     		<td><button onclick="dis('-');">-</button></td>
+     		<td><button onclick="selectOperator('-');">-</button></td>
      	</tr>
      	<tr>
      		<td><button onclick="dis('7');">7</button></td>
      		<td><button onclick="dis('8');">8</button></td>
      		<td><button onclick="dis('9');">9</button></td>
-     		<td><button onclick="dis('+');">+</button></td>
+     		<td><button onclick="selectOperator('+');">+</button></td>
      	</tr>
      	<tr>
      		<td><button onclick="dis('.');">.</button></td>
      		<td><button onclick="dis('0');">0</button></td>
      		<td><button onclick="equal();">=</button></td>
-     		<td><button onclick="dis('*');">*</button></td>
+     		<td><button onclick="selectOperator('*');">*</button></td>
    </body>
 </html>
