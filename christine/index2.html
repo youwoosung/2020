@@ -3,25 +3,31 @@
      <title>Javascript Practice</title>
      <script>
      
-    function imgDog() {
-       document.getElementById("result").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvggj2_E8WudBhqOBlgqmOwM5nYpYbL-Wwfw&usqp=CAU";
-    }
-    function imgFlower() {
-       document.getElementById("result").src = "https://images.unsplash.com/photo-1576073732976-69755474b002?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cHJldHR5JTIwZmxvd2Vyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80";
-    }
-    function imgWaterBottle() {
-       document.getElementById("result").src = "https://loveincorporated.blob.core.windows.net/contentimages/main/a1f9fb39-d30b-4573-b01b-374ec00c0512-23myflavour.jpg";
-    }
+    var states = ["California", " Texas", " New York", " South Carolina", " Georgia", " Flordia", "  Pennsylvania", " Washington", " Ohio", " Illinois"];
+    var population = [39512223, 28995881, 19453561, 5148714, 10617423, 21477737, 12801989, 7614893, 11689100, 12671821];
     
-    </script>
+    alert(states[4]); 
+    alert(population[4]);
     
-    <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvggj2_E8WudBhqOBlgqmOwM5nYpYbL-Wwfw&usqp=CAU" 
-            style="width: 150;" id="result" /></p>
+    alert(states.length);
     
-    <input id="result" type="button" value="Dog" onclick="imgDog()"/>
-    <input id="result" type="button" value="Flower" onclick="imgFlower()"/>
-    <input id="result" type="button" value="Water Bottle" onclick="imgWaterBottle()"/>
-     
+    states.push("Massachusetts");
+    population.push(6949503);
+    
+    alert(states[10]);
+    alert(population[10]);
+    
+    alert(states.length);
+    
+    states.pop();
+    population.pop();
+    
+    alert(states[10]);
+    alert(population[10]);
+    
+    alert(states.length);
+    
+       </script>
     </head>
    <body>
        <h3>Javascript</h3>
