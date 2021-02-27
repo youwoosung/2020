@@ -2,84 +2,31 @@
   <head>
     <title> Javascript Practice</title>
 		<script>
-		var numOne;
-		var numTwo;
-		var globalOper;
-		
-     		function dis(x) {
-     		
-     			document.getElementById('lauren').value += x;
-     		}
-     		function selectOperator(operator) {
-     			globalOper = operator;
-     			
-     			var userEntered = document.getElementById('lauren').value;
-     			var intUserEntered = parseInt(userEntered);
-     			
-     			numOne = intUserEntered;
-     			document.getElementById('lauren').value = ''
-     		}
-     		function clearInput() {
-     			document.getElementById('lauren').value = ''
-     			numOne = -1;
-     			numTwo = -1;
-     		}
-     		function equal() {
-     			var userEnteredNum = document.getElementById('lauren').value;
-     			var intUserEnteredNum = parseInt(userEnteredNum);
-     			
-     			numTwo = intUserEnteredNum;
-     			document.getElementById('lauren').value = ''
-     			
-     			var sum = numOne + numTwo;
-     			var sub = numOne - numTwo;
-     			var mul = numOne * numTwo;
-     			var div = numOne / numTwo;
-     			
-     			if(globalOper == "+") {
-     				alert("You entered " + numOne + " and " + numTwo + ", and the sum of the number is " + sum);
-     			}
-     			else if (globalOper == "-") {
-     				alert("You entered " + numOne + " and " + numTwo + ", and the difference of the number is " + sub);
-     			}
-     			else if(globalOper == "*") {
-     				alert("You entered " + numOne + " and " + numTwo + ", and the times of the number is " + mul);
-     			}
-     			else {
-     				alert("You entered " + numOne + " and " + numTwo + ", and the quotient of the number is " + div);
-     			}
-     		}
+			function beach() {
+				document.getElementById('lauren').src = "https://thumbs.dreamstime.com/b/palms-tropical-beach-white-sand-summer-vacation-travel-holiday-background-concept-caribbean-paradise-beach-palms-136606345.jpg";
+			}
+			function park() {
+				document.getElementById('lauren').src = "https://static01.nyt.com/images/2019/11/03/travel/00footsteps-olmsted1/merlin_161566521_4d72ba34-770d-4835-9095-710c24a11877-superJumbo.jpg";
+			}
+			function dog() {
+				document.getElementById('lauren').src = "https://i.ytimg.com/vi/1HygThMLzGs/maxresdefault.jpg";
+			}
+			function macaroon() {
+				document.getElementById('lauren').src = "https://sugargeekshow.com/wp-content/uploads/2018/01/french-macaron-recipe.jpg";
+			}
+			function space() {
+				document.getElementById('lauren').src = "https://miro.medium.com/max/6200/1*teBtR_0pirBnX4nURoMvLA.jpeg";
+			}
      	</script>
   </head>
-   <body>
-     <table border = 1>
-     	<tr>
-     		<td colspan = "3"><input type="text" id="lauren" name="txt"/>
-     		</td>
-     		<td><button onclick="clearInput();">C</button></td>
-     	</tr>
-     	<tr>
-     		<td><button onclick="dis('1');">1</button></td>
-     		<td><button onclick="dis('2');">2</button></td>
-     		<td><button onclick="dis('3');">3</button></td>
-     		<td><button onclick="selectOperator('/');">/</button></td>
-     	</tr>
-     	<tr>
-     		<td><button onclick="dis('4');">4</button></td>
-     		<td><button onclick="dis('5');">5</button></td>
-     		<td><button onclick="dis('6');">6</button></td>
-     		<td><button onclick="selectOperator('-');">-</button></td>
-     	</tr>
-     	<tr>
-     		<td><button onclick="dis('7');">7</button></td>
-     		<td><button onclick="dis('8');">8</button></td>
-     		<td><button onclick="dis('9');">9</button></td>
-     		<td><button onclick="selectOperator('+');">+</button></td>
-     	</tr>
-     	<tr>
-     		<td><button onclick="dis('.');">.</button></td>
-     		<td><button onclick="dis('0');">0</button></td>
-     		<td><button onclick="equal();">=</button></td>
-     		<td><button onclick="selectOperator('*');">*</button></td>
-   </body>
+	<body>
+		<img alt="" src="https://thumbs.dreamstime.com/b/palms-tropical-beach-white-sand-summer-vacation-travel-holiday-background-concept-caribbean-paradise-beach-palms-136606345.jpg"
+			style="height: 500px;" id = 'lauren' /></p>
+			
+		<input id="hello" type="button" value='beach' onclick="beach()"/>
+		<input id="hello" type="button" value='park' onclick="park()"/>
+		<input id="hello" type="button" value='dog' onclick="dog()"/>
+		<input id="hello" type="button" value='macaroon' onclick="macaroon()"/>
+		<input id="hello" type="button" value='space' onclick="space()"/>
+	</body>
 </html>
