@@ -3,88 +3,24 @@
      <title>Javascript Practice</title>
      <script>
      
-        var numOne;
-        var numTwo;
-        var globOper;
-        
-        function dis(val) { 
-            document.getElementById("result").value += val;
-        } 
-        
-        function selectedOperator(operator) {
-            globOper = operator;
-            
-            var userNum = document.getElementById("result").value;
-            var floatUserNum = parseFloat(userNum);
-            
-            numOne = floatUserNum;
-            document.getElementById("result").value = ""; 
-        }
-        function clr() { 
-            document.getElementById("result").value = ""; 
-            numOne = -1;
-            numTwo = -1;
-        } 
-        
-        function solve() {
-            var userNum = document.getElementById("result").value;
-            var floatUserNum = parseFloat(userNum);
-            
-            numTwo = floatUserNum; 
-            document.getElementById("result").value = '';
-            
-            var sum = numOne + numTwo; 
-            var sub = numOne - numTwo;
-            var mult = numOne * numTwo;
-            var div = numOne / numTwo;
-                
-            if(globOper == "+") {
-                   alert("You entered " + numOne + " and " + numTwo + ", and the sum of the number is " + sum);
-            }
-            else if(globOper == "-") {
-                   alert("You entered " + numOne + " and " + numTwo + ", and the difference is " + sub);
-            }
-            else if(globOper == "*") {
-                   alert("You entered " + numOne + " and " + numTwo + ", and the product is " + mult);
-            }
-            else {
-                   alert("You entered " + numOne + " and " + numTwo + ", and the quotient is " + div);
-            }
-         }
-        
-     </script>
-     
-     <table border=1>
-   <tr>
-      <td colspan="3"><input type="text" id="result"/></td>
-      <td><input type="button" value="c" onclick="clr()"/></td>
-   </tr>
-   <tr>
-      <td><input type="button" value="1" onclick="dis('1')"/> </td> 
-      <td><input type="button" value="2" onclick="dis('2')"/> </td> 
-      <td><input type="button" value="3" onclick="dis('3')"/> </td> 
-      <td><input type="button" value="/" onclick="selectedOperator('/')"/> </td> 
-   </tr>
-   <tr>
-      <td><input type="button" value="4" onclick="dis('4')"/> </td> 
-      <td><input type="button" value="5" onclick="dis('5')"/> </td> 
-      <td><input type="button" value="6" onclick="dis('6')"/> </td> 
-      <td><input type="button" value="-" onclick="selectedOperator('-')"/> </td> 
-   </tr>
-   <tr>
-      <td><input type="button" value="7" onclick="dis('7')"/> </td> 
-      <td><input type="button" value="8" onclick="dis('8')"/> </td> 
-      <td><input type="button" value="9" onclick="dis('9')"/> </td> 
-      <td><input type="button" value="+" onclick="selectedOperator('+')"/> </td> 
-   </tr>
-   <tr>
-      <td><input type="button" value="." onclick="dis('.')"/> </td> 
-      <td><input type="button" value="0" onclick="dis('0')"/> </td> 
-      <td><input type="button" value="=" onclick="solve('=')"/> </td> 
-      <td><input type="button" value="*" onclick="selectedOperator('*')"/> </td> 
-   </tr>
-    </table>   
-     
+    function imgDog() {
+       document.getElementById("result").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvggj2_E8WudBhqOBlgqmOwM5nYpYbL-Wwfw&usqp=CAU";
+    }
+    function imgFlower() {
+       document.getElementById("result").src = "https://images.unsplash.com/photo-1576073732976-69755474b002?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cHJldHR5JTIwZmxvd2Vyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80";
+    }
+    function imgWaterBottle() {
+       document.getElementById("result").src = "https://loveincorporated.blob.core.windows.net/contentimages/main/a1f9fb39-d30b-4573-b01b-374ec00c0512-23myflavour.jpg";
+    }
+    
+    </script>
+    
+    <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvggj2_E8WudBhqOBlgqmOwM5nYpYbL-Wwfw&usqp=CAU" 
+            style=width: "100" id="result" /></p>
+    
+    <input id="result" type="button" value="Dog" onclick="imgDog()"/>
+    <input id="result" type="button" value="Flower" onclick="imgFlower()"/>
+    <input id="result" type="button" value="Water Bottle" onclick="imgWaterBottle()"/>
      
     </head>
    <body>
