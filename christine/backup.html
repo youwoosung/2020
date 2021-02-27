@@ -847,8 +847,6 @@
      <input type="button" id="colorButton" value="Click to Change your color" onclick="changeColor()">
 	
 	
-	
-	
 	<select onChange="color(this.value)">
          <option value="">Color</option>
          <option value="#7FFFD4">Aquamarine</option>
@@ -865,7 +863,24 @@
          }
      </script>
 	  
-	  
+    function imgDog() {
+       document.getElementById("result").src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvggj2_E8WudBhqOBlgqmOwM5nYpYbL-Wwfw&usqp=CAU";
+    }
+    function imgFlower() {
+       document.getElementById("result").src = "https://images.unsplash.com/photo-1576073732976-69755474b002?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cHJldHR5JTIwZmxvd2Vyc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80";
+    }
+    function imgWaterBottle() {
+       document.getElementById("result").src = "https://loveincorporated.blob.core.windows.net/contentimages/main/a1f9fb39-d30b-4573-b01b-374ec00c0512-23myflavour.jpg";
+    }
+    
+    </script>
+    
+    <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvggj2_E8WudBhqOBlgqmOwM5nYpYbL-Wwfw&usqp=CAU" 
+            style=width: "100" id="result" /></p>
+    
+    <input id="result" type="button" value="Dog" onclick="imgDog()"/>
+    <input id="result" type="button" value="Flower" onclick="imgFlower()"/>
+    <input id="result" type="button" value="Water Bottle" onclick="imgWaterBottle()"/>  
 	  
      </script>
      
