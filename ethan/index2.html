@@ -3,162 +3,41 @@
 		<title>Javascript Practice</title>
 		<script>
 			
-			var num1;
-			var num2;
-			var globOper;
-			
-			function dis(x) {
-				document.getElementById("foot").value += x;
+			function imgDog() {
+				document.getElementById("img").src = "https://raw.githubusercontent.com/youwoosung/2020/master/ethan/IMG_2184.JPG";
 			}
 			
-			function selectOperator(operator) {
-				globOper = operator;
-  				var userNum = document.getElementById("foot").value;
-				var floatUserNum = parseFloat(userNum);
-			
-				num1 = floatUserNum;
-				document.getElementById("foot").value = '';
+			function imgBibimbap() {
+				document.getElementById("img").src = "https://minimalistbaker.com/wp-content/uploads/2019/05/Bibimbap-SQUARE.jpg";
 			}
 			
-			function clr() {
-				document.getElementById("foot").value = '';
-				num1 = -1;
-				num2 = -1;
+			function imgPizza() {
+				document.getElementById("img").src = "https://www.qsrmagazine.com/sites/default/files/styles/story_page/public/phut_0.jpg?itok=h30EAnkk";
 			}
 			
-			function solve(x) {
-				var userNum = document.getElementById("foot").value;
-				var floatUserNum = parseFloat(userNum);
+			function imgSushi() {
+				document.getElementById("img").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/1200px-Sushi_platter.jpg";
+			}
 			
-				num2 = floatUserNum; 
-				document.getElementById("foot").value = '';
-				
-				var sum = num1 + num2;
-				var difference = num1 - num2;
-				var product = num1 * num2;
-				var quotient = num1 / num2;
-				
-				if(globOper == '+') {
-					alert("You entered " + num1 + " and " + num2 + ". The sum is " + sum);
-				}
-				else if(globOper == '-') {
-					alert("You entered " + num1 + " and " + num2 + ". The difference is " + difference);
-				}
-				else if(globOper == '*') {
-					alert("You entered " + num1 + " and " + num2 + ". The product is " + product);
-				}
-				else {
-					alert("You entered " + num1 + " and " + num2 + ". The quotient is " + quotient);
-				}
+			function imgBuchimgae() {
+				document.getElementById("img").src = "https://upload.wikimedia.org/wikipedia/commons/c/c9/Banga_buchimgae_%28Korean_mint_pancake%29_%28Agastache_rugosa%29.jpg";
 			}
 		</script>
-			
-			<table border=1>
-		<tr>
-			<td colspan="3"><input type="text" id="foot" name="txt"/></td>
-			<td><input type="button" value="c" onclick="clr()"/></td>
-		</tr>
-     	<tr>
-     		<td><input type="button" value="1" onclick="dis('1')"/></td>
-     		<td><input type="button" value="2" onclick="dis('2')"/></td>
-     		<td><input type="button" value="3" onclick="dis('3')"/></td>
-     		<td><input type="button" value="/" onclick="selectOperator('/')"/></td>
-     	</tr>
-		<tr>
-     		<td><input type="button" value="4" onclick="dis('4')"/></td>
-     		<td><input type="button" value="5" onclick="dis('5')"/></td>
-     		<td><input type="button" value="6" onclick="dis('6')"/></td>
-     		<td><input type="button" value="-" onclick="selectOperator('-')"/></td>
-     	</tr>
-     	<tr>
-     		<td><input type="button" value="7" onclick="dis('7')"/></td>
-     		<td><input type="button" value="8" onclick="dis('8')"/></td>
-     		<td><input type="button" value="9" onclick="dis('9')"/></td>
-     		<td><input type="button" value="+" onclick="selectOperator('+')"/></td>
-     	</tr>
-     	<tr>
-     		<td><input type="button" value="." onclick="dis('.')"/></td>
-     		<td><input type="button" value="0" onclick="dis('0')"/></td>
-     		<td><input type="button" value="=" onclick="solve()"/></td>
-     		<td><input type="button" value="*" onclick="selectOperator('*')"/></td>
-     	</tr>
-     	</table>
-     	
-     		<table border=1>
-		<tr>
-			<td colspan="4"><input type="text" id="foot" name="txt"/></td>
-			<td><input type="button" value="n/a" onclick="dis('n/a')"/></td>
-		</tr>
-     	<tr>
-     		<td><input type="button" value="y=" onclick="dis('y=')"/></td>
-     		<td><input type="button" value="window" onclick="dis('window')"/></td>
-     		<td><input type="button" value="zoom" onclick="dis('zoom')"/></td>
-     		<td><input type="button" value="trace" onclick="dis('trace')"/></td>
-     		<td><input type="button" value="graph" onclick="dis('graph')"/></td>
-     	</tr>
-     	<tr>
-     		<td><input type="button" value="2nd" onclick="dis('2nd')"/></td>
-     		<td><input type="button" value="mode" onclick="dis('mode')"/></td>
-     		<td><input type="button" value="del" onclick="dis('del')"/></td>
-     	</tr>
-     	<tr>
-     		<td><input type="button" value="alpha" onclick="dis('alpha')"/></td>
-     		<td><input type="button" value="X,T,Ø,n" onclick="dis('X,T,Ø,n')"/></td>
-     		<td><input type="button" value="stat" onclick="dis('stat')"/></td>
-     	</tr>
-     	<tr>
-     		<td><input type="button" value="math" onclick="dis('math')"/></td>
-     		<td><input type="button" value="apps" onclick="dis('apps')"/></td>
-     		<td><input type="button" value="prgm" onclick="dis('prgm')"/></td>
-     		<td><input type="button" value="vars" onclick="dis('vars')"/></td>
-     		<td><input type="button" value="clear" onclick="clr()"/></td>
-     	</tr>
-     	<tr>
-     		<td><input type="button" value="x^-1" onclick="dis('x^-1')"/></td>
-     		<td><input type="button" value="sin" onclick="dis('sin')"/></td>
-     		<td><input type="button" value="cos" onclick="dis('cos')"/></td>
-     		<td><input type="button" value="tan" onclick="dis('tan')"/></td>
-     		<td><input type="button" value="^" onclick="dis('^')"/></td>
-     	</tr>
-     	<tr>
-     		<td><input type="button" value="x^2" onclick="dis('x^2')"/></td>
-     		<td><input type="button" value="," onclick="dis(',')"/></td>
-     		<td><input type="button" value="(" onclick="dis('(')"/></td>
-     		<td><input type="button" value=")" onclick="dis(')')"/></td>
-     		<td><input type="button" value="/" onclick="dis('/')"/></td>
-     	</tr>
-     	<tr>
-     		<td><input type="button" value="log" onclick="dis('log')"/></td>
-     		<td><input type="button" value="7" onclick="dis('7')"/></td>
-     		<td><input type="button" value="8" onclick="dis('8')"/></td>
-     		<td><input type="button" value="9" onclick="dis('9')"/></td>
-     		<td><input type="button" value="*" onclick="dis('*')"/></td>
-     	</tr>
-     	<tr>
-     		<td><input type="button" value="In" onclick="dis('In')"/></td>
-     		<td><input type="button" value="4" onclick="dis('4')"/></td>
-     		<td><input type="button" value="5" onclick="dis('5')"/></td>
-     		<td><input type="button" value="6" onclick="dis('6')"/></td>
-     		<td><input type="button" value="-" onclick="dis('-')"/></td>
-     	</tr>
-     	<tr>
-     		<td><input type="button" value="sto" onclick="dis('sto')"/></td>
-     		<td><input type="button" value="1" onclick="dis('1')"/></td>
-     		<td><input type="button" value="2" onclick="dis('2')"/></td>
-     		<td><input type="button" value="3" onclick="dis('3')"/></td>
-     		<td><input type="button" value="+" onclick="dis('+')"/></td>
-     	</tr>
-     	<tr>
-     		<td><input type="button" value="on" onclick="dis('on')"/></td>
-     		<td><input type="button" value="0" onclick="dis('0')"/></td>
-     		<td><input type="button" value="." onclick="dis('.')"/></td>
-     		<td><input type="button" value="(-)" onclick="dis('(-)')"/></td>
-     		<td><input type="button" value="enter" onclick="solve()"/></td>
-     	</tr>
-     	</table>
-     	
 	</head>
 	<body>
+		
+		<img alt="" src="https://karenmahon.files.wordpress.com/2012/10/logo-no-homework-480.gif"
+            style="width: 150;" id="img" /></p>
+            
+		<select onChange="changeImages(this.value)">
+			<option id="Images" type="button" value="Images" onclick="">Images</option>
+			<option id="Dog" type="button" value="Dog" onclick="imgDog()">Dog</option>
+			<option id="Bibimbap" type="button" value="Bibimbap" onclick="imgBibimbap()">Bibimbap</option>
+			<option id="Pizza" type="button" value="Pizza" onclick="imgPizza()">Pizza</option>
+			<option id="Sushi" type="button" value="Sushi" onclick="imgSushi()">Sushi</option>
+			<option id="Buchimgae" type="button" value="Buchimgae" onclick="imgBuchimgae()">Buchimgae</option>
+		</select>
+	
 		<h1>Javascript</h1>
 		<br>
 		<input type="submit" value="Click Me I Need Friends :)"/>
