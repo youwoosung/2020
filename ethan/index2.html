@@ -3,41 +3,34 @@
 		<title>Javascript Practice</title>
 		<script>
 			
-			function imgDog() {
-				document.getElementById("img").src = "https://raw.githubusercontent.com/youwoosung/2020/master/ethan/IMG_2184.JPG";
-			}
+			var states = ['California', 'Florida', 'Georgia', 'South Carolina', 'New York', 'Mississippi', 'Nebraska', 'Texas', 'Washington', 'Virginia'];
 			
-			function imgBibimbap() {
-				document.getElementById("img").src = "https://minimalistbaker.com/wp-content/uploads/2019/05/Bibimbap-SQUARE.jpg";
-			}
+			var populations = [39984261, 22200000, 10800000, 5270000, 19460000, 2900000, 1960000, 29880000, 7800000, 8690000];
 			
-			function imgPizza() {
-				document.getElementById("img").src = "https://www.qsrmagazine.com/sites/default/files/styles/story_page/public/phut_0.jpg?itok=h30EAnkk";
-			}
+			alert(states[4]);
+			alert(populations[4]);
+			alert(states.length);
+			alert(populations.length);
 			
-			function imgSushi() {
-				document.getElementById("img").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/1200px-Sushi_platter.jpg";
-			}
+			states.push('Illinois');
+			populations.push(12620000);
 			
-			function imgBuchimgae() {
-				document.getElementById("img").src = "https://upload.wikimedia.org/wikipedia/commons/c/c9/Banga_buchimgae_%28Korean_mint_pancake%29_%28Agastache_rugosa%29.jpg";
-			}
+			alert(states[10]);
+			alert(populations[10]);
+			alert(states.length);
+			alert(populations.length);
+			
+			states.pop();
+			populations.pop();
+			
+			alert(states[10]);
+			alert(populations[10]);
+			alert(states.length);
+			alert(populations.length);
+			
 		</script>
 	</head>
 	<body>
-		
-		<img alt="" src="https://karenmahon.files.wordpress.com/2012/10/logo-no-homework-480.gif"
-            style="width: 150;" id="img" /></p>
-            
-		<select onChange="changeImages(this.value)">
-			<option id="Images" type="button" value="Images" onclick="">Images</option>
-			<option id="Dog" type="button" value="Dog" onclick="imgDog()">Dog</option>
-			<option id="Bibimbap" type="button" value="Bibimbap" onclick="imgBibimbap()">Bibimbap</option>
-			<option id="Pizza" type="button" value="Pizza" onclick="imgPizza()">Pizza</option>
-			<option id="Sushi" type="button" value="Sushi" onclick="imgSushi()">Sushi</option>
-			<option id="Buchimgae" type="button" value="Buchimgae" onclick="imgBuchimgae()">Buchimgae</option>
-		</select>
-	
 		<h1>Javascript</h1>
 		<br>
 		<input type="submit" value="Click Me I Need Friends :)"/>
