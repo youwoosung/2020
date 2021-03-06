@@ -2,28 +2,13 @@
   <head>
     <title> Javascript Practice</title>
 		<script>
-		var states = ['New York', 'Georgia', 'California', 'Florida', 'Virginia', 'Illinois', 'Alabama', 'Pennsylvania', 'Mississippi', 'Utah' ]
+		var states = ['New York', 'Georgia', 'California', 'Florida', 'Virginia', 'Illinois', 'Alabama', 'Pennsylvania', 'Mississippi', 'Utah']
 		
-		var population = [19453561, 10617423, 39512223, 21477727, 8535519, 12671821, 4903185, 12801989, 2976149, 3205958]
-		
-		alert("The 5th state in the array is " + states[4]);
-		alert("The population of " + states[4] + " is, " + population[4]);
-		alert("The length of the array is " + states.length);
-		
-		states.push('Arizona');
-		population.push(7278717);
-		
-		alert("The added state to the array is " + states[10] + ", and the population of " + states[10] + " is " + population[10] );
-		alert("The length of the array is " + states.length);
-		
-		states.pop();
-		population.pop();
-		
-		alert("The state added is now " + states[10] + ", and the population of " + states[10] + " is now " + population[10]);
-		alert("The length of the array is " + states.length);
-     	</script>
+		for (var hi=9; hi>0; hi-=2) {
+			alert(states[hi]);
+		}
+		</script>
   </head>
 	<body>
-	
 	</body>
 </html>
