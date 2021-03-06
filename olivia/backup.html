@@ -637,6 +637,35 @@
  	<input id="hello" type="button" value="puppy" onclick="changeImg('https://i.ytimg.com/vi/mRf3-JkwqfU/mqdefault.jpg')"/>
  	<input id="hello" type="button" value="food" onclick="changeImg('https://www.koreanbapsang.com/wp-content/uploads/2017/01/DSC_1819-2.jpg')"/>
  	<input id="hello" type="button" value="more food" onclick="changeImg('https://media-cdn.tripadvisor.com/media/photo-s/04/cf/41/f3/rainbow-roll-yellow-tuna.jpg')"/>
+	
+		var states = ["Georgia", "New York", "Florida", "California", "Texas", "Illinois", "Washington", "Alabama", "Alaska", "Hawaii"];
+	var populations = [10710017, 19336776, 21733312, 39368078, 29360759, 12587530, 7693612,4921532, 731158, 1407006];
+	var addState = "Rhode Island";
+	var addPopulation = 1057125;
+	
+	alert(states[4]);
+	alert(populations[4]);
+	
+	alert(states.length);
+	alert(populations.length);
+	
+	states.push(addState);
+	populations.push(addPopulation);
+	
+	alert(states[10]);
+	alert(populations[10]);
+	
+	alert(states.length);
+	alert(populations.length);
+	
+	states.pop();
+	populations.pop();
+	
+	alert(addState);
+	alert(addPopulation);
+    
+    alert(states.length);
+    alert(populations.length);
  
 </script>
   </head>
