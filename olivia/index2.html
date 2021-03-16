@@ -2,17 +2,18 @@
   <head>
     <title>Javascript</title>  	
 	<script>
-	
+
 	var states = ["Georgia", "New York", "Florida", "California", "Texas", "Illinois", "Washington", "Alabama", "Alaska", "Hawaii"];
-	var populations = [10710017, 19336776, 21733312, 39368078, 29360759, 12587530, 7693612,4921532, 731158, 1407006];
+	var populations = [10710017, 19336776, 21733312, 39368078, 29360759, 12587530, 7693612, 4921532, 731158, 1407006];  
+    var total = 0;
+    
+	for(var hello = 0; hello < populations.length; hello++) {
+	   total = total + populations[hello];
+	}
 	
-	for(var hello = 8; hello >= 0; hello = hello - 2) {
-	   alert(states[hello]);
-	}
-	for(var hi = 8; hi >= 0; hi = hi - 2) {
-	   alert(populations[hi]);
-	}
-		
+	var average = total / populations.length;
+	alert(average);
+	
  	</script>
 
   </head>
