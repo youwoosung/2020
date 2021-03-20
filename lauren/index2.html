@@ -3,10 +3,15 @@
     <title> Javascript Practice</title>
 		<script>
 		var states = ['New York', 'Georgia', 'California', 'Florida', 'Virginia', 'Illinois', 'Alabama', 'Pennsylvania', 'Mississippi', 'Utah']
+		var population = [19453561, 10617423, 39512223, 21477727, 8535519, 12671821, 4903185, 12801989, 2976149, 3205958]
+		var total = 0 
 		
-		for (var hi=9; hi>0; hi-=2) {
-			alert(states[hi]);
-		}
+    	for (var phone=0; phone<population.length; phone++) {
+        	total = total + population[phone];
+    	}
+    
+    	var average = total / population.length;
+    		alert(average); 
 		</script>
   </head>
 	<body>
