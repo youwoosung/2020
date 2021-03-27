@@ -5,10 +5,13 @@
 
 	var states = ["Georgia", "New York", "Florida", "California", "Texas", "Illinois", "Washington", "Alabama", "Alaska", "Hawaii"];
 	var populations = [10710017, 19336776, 21733312, 39368078, 29360759, 12587530, 7693612, 4921532, 731158, 1407006];  
-    var total = 0;
     
-	for(var hello = 0; hello < populations.length; hello++) {
+    var total = 0;
+    var hello = 0;
+    
+	while(hello < populations.length) {
 	   total = total + populations[hello];
+	   hello++;
 	}
 	
 	var average = total / populations.length;
