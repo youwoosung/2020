@@ -565,6 +565,28 @@
 			
 			var averagePopulation = total / populations.length;
 			alert(averagePopulation);
+			
+			var sum = 0;
+			var x = 0;
+			
+			while(x<populations.length) {
+				sum += populations[x];
+				x++;
+			}
+			
+			var averagePopulation = sum / populations.length;
+			alert(averagePopulation);
+			
+			var total = 0;
+			var i = 0;
+			
+			do {
+				total += populations[i];
+				i++;
+			}while(i<populations.length);
+			
+			var averagePopulation = total / populations.length;
+			alert(averagePopulation);
 		</script>
 		
 		<table border=1>
