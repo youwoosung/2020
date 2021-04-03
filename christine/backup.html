@@ -997,7 +997,26 @@
       }
    }
    
-   alert(hasOdd); 			       
+   alert(hasOdd); 	
+
+
+
+
+
+function largestNum(x) {
+       var max = x[0];
+       
+       for(var j = 0; j < x.length; j++) {
+          if(x[j] > max) {
+             max = x[j]; 
+          }
+       }
+       return max; 
+    }
+    
+    
+    var nums = [48, 4, 24, 96, 11, 19, 83, 80, 100, 89, 63, 20, 2, 90, 22, 81, 78, 72, 53, 21, 95, 39, 86, 85, 17, 32, 25, 36, 70, 56, 97, 44, 65, 3, 82, 51, 41, 50, 88, 10, 47, 33, 6, 99, 23, 71, 27, 28, 49, 13];
+       alert(largestNum(nums)); 
     
 				 
 				 
