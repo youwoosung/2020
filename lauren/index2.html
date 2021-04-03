@@ -2,33 +2,19 @@
   <head>
     <title> Javascript Practice</title>
 		<script>
-		var states = ['New York', 'Georgia', 'California', 'Florida', 'Virginia', 'Illinois', 'Alabama', 'Pennsylvania', 'Mississippi', 'Utah']
-		var population = [19453561, 10617423, 39512223, 21477727, 8535519, 12671821, 4903185, 12801989, 2976149, 3205958]
-
-		var sum = 0;
-		var num = 0;
-	
-		while (num <population.length) {
-			sum += population[num];
-			num++;
+		function maxNum(x) {
+			var maximum = x[0]
+			
+			for(var i=1; i < x.length; i++) {
+				if(x[i] > max) {
+					max = x[i];
+				}
+			}
+			return max;
 		}
 		
-		var average = sum / population.length;
-		alert(average);
-		
-		
-		var total = 0;
-		var number = 0;
-		
-		do{
-			total += population[number];
-			number++;
-		}
-		
-		while(number < population.length);
-		
-		var average = total / population.length;
-		alert(average);
+		var numbers = [48, 4, 24, 96, 11, 19, 83, 80, 100, 89, 63, 20, 2, 90, 22, 81, 78, 72, 53, 21, 95, 39, 86, 85, 17, 32, 25, 36, 70, 56, 97, 44, 65, 3, 82, 51, 41, 50, 88, 10, 47, 33, 6, 99, 23, 71, 27, 28, 49, 13];
+			alert(maxNum(numbers));
 		</script>
   </head>
 	<body>
