@@ -976,8 +976,31 @@
     
     var average = total / population.length;
     alert(average); 
-				       
-				       
+				 
+				 
+         for (var i = 0; i < 3; i++) {
+        alert('outer: ' + i);
+        
+      for (var j = 0; j < 5; j++){
+        alert('inner: ' + j);
+      }
+     }
+			 
+				 
+	var nums = [2,4,6,10,1001];
+   
+   var hasOdd = false; 
+   
+   for (var i = 0; i < nums.length; i++) {
+      if(nums[i] % 2 == 1) {
+      hasOdd = true; 
+      }
+   }
+   
+   alert(hasOdd); 			       
+    
+				 
+				 
 				       
 	  
      </script>
