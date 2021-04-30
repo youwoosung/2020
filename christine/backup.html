@@ -1081,12 +1081,35 @@ function largestNum(x) {
        }       
 	       
 	       
+     var words1 = ["ab", "cb", "bc", "ba", "ac", "bc", "ca", "ac", "ab", "bc", "ab", "cb", "bc", "ba", "ac", 
+                     "bc", "ca", "ac", "ab", "bc"];
+
+     var count = 0;  
+
+     for(var i = 0; i < words1.length; i++) {
+        if(words1[i] == "ab") {
+           count++
+        }
+     }
+     alert(count);       
 	       
 	       
 	       
 	       
-	       
-	       
+     var words1 = [["ab", "cb", "bc"], ["ba", "ac", "bc"], ["ca", "ac", "ab"], 
+     ["bc", "ab", "cb"], ["bc", "ba", "ac"], ["bc", "ca", "ac"], ["ab", "bc", "ab"]];
+     
+     var count = 0
+     
+     for(var i = 0; i < words1.length; i++) {
+          for(var j = 0; j < words1[i].length; j++) {
+             if(words1[i][j] == "ab") {
+                count++; 
+             }
+          }
+     }
+     
+     alert(count);       
 	       
 	       
 	       
