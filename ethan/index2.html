@@ -2,35 +2,24 @@
 	<head>
 		<title>Javascript Practice</title>
 		<script>
-			var nums = [[48, 4, 24, 96, 11], [19, 83, 80, 100, 89], [63, 20, 2, 90, 22], [81, 78, 72, 53, 21], [95, 39, 86, 85, 17], [32, 25, 36, 70, 56]];
-			var maxNum = 0;
+			var nums1 = [[48, 4, 24, 96, 11], [19, 83, 80, 100, 89], [63, 20, 2, 90, 22], [81, 78, 72, 53, 21], [95, 39, 86, 85, 17], [32, 25, 36, 70, 56], [48, 4, 24, 96, 11], [19, 83, 80, 100, 89], [63, 20, 2, 90, 22], [81, 78, 72, 53, 21], [95, 39, 86, 85, 17], [32, 25, 36, 70, 56], [48, 4, 24, 96, 11], [19, 83, 80, 100, 89], [63, 20, 2, 90, 22], [81, 78, 72, 53, 21], [95, 39, 86, 85, 17], [32, 25, 36, 70, 56], [48, 4, 24, 96, 11], [19, 83, 80, 100, 89], [63, 20, 2, 90, 22], [81, 78, 72, 53, 21], [95, 39, 86, 85, 17], [32, 25, 36, 70, 56], [48, 4, 24, 96, 11], [19, 83, 80, 100, 89], [63, 20, 2, 90, 22], [81, 78, 72, 53, 21], [95, 39, 86, 85, 17], [32, 25, 36, 70, 56], [48, 4, 24, 96, 11], [19, 83, 80, 100, 89], [63, 20, 2, 90, 22], [81, 78, 72, 53, 21], [95, 39, 86, 85, 17], [32, 25, 36, 70, 56]];
+			caculateAverage(nums1);
 			
-			for(var i=0; i<nums.length; i++) {
-				for(var j=0; j<nums[i].length; j++) {
-					if(nums[i][j]>maxNum) {
-					maxNum = nums[i][j];
-					}
-				}
-			}
-			alert(maxNum);
-			
-			var nums1 = [[24, 96, 11], [80, 100, 89], [2, 90, 22], [72, 53, 21], [86, 85, 17], [36, 70, 56]];
-			var nums2 = [[48, 4, 24, 11], [19, 83, 80, 89], [63, 20, 2, 22], [81, 78, 72, 21]];
-			var nums3 = [[34, 4, 24, 96, 2], [22, 83, 80, 100, 4], [66, 20, 2, 90, 2], [88, 78, 72, 53, 1], [95, 39, 86, 85, 7], [32, 25, 36, 70, 6]];
-			
-			sumOfLastElements(nums1);
-			sumOfLastElements(nums2);
-			sumOfLastElements(nums3);
-			
-			function sumOfLastElements(twoDarray) {
-				var sum = 0;
-				for(var i=0; i<twoDarray.length; i++) {
-					var size = twoDarray[i].length;
-					var lastElement = size-1;
-					sum += twoDarray[i][lastElement];
-				}
-				alert(sum);
-			}
+			function calculateAverage(twoDarray) {
+       				var sum = 0;
+       				var total = 0;
+      				for(var i = 0; i < twoDarray.length; i++) {
+           			    for(var j = 0; j < twoDarray[i].length; j++) {
+               				sum += twoDarray[i][j];
+               				total++
+              				var size = twoDarray.length - 1;
+              				if(size == i) {
+             		    			var average = sum / total;
+              				}
+            			    }
+         			}
+         		alert(average);
+     			}
 		</script>
 	</head>
 	<body>
