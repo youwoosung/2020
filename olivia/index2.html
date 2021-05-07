@@ -4,24 +4,20 @@
     <title>Javascript</title>
     <script>   	
         
-    var nums1 = [[48, 4, 24, 96, 11], [19, 83, 80, 100, 89], [63, 20, 2, 90, 22], [81, 78, 72, 53, 21], [95, 39, 86, 85, 17], [32, 25, 36, 70, 56], [48, 4, 24, 96, 11], [19, 83, 80, 100, 89], [63, 20, 2, 90, 22], [81, 78, 72, 53, 21], [95, 39, 86, 85, 17], [32, 25, 36, 70, 56], [48, 4, 24, 96, 11], [19, 83, 80, 100, 89], [63, 20, 2, 90, 22], [81, 78, 72, 53, 21], [95, 39, 86, 85, 17], [32, 25, 36, 70, 56], [48, 4, 24, 96, 11], [19, 83, 80, 100, 89], [63, 20, 2, 90, 22], [81, 78, 72, 53, 21], [95, 39, 86, 85, 17], [32, 25, 36, 70, 56], [48, 4, 24, 96, 11], [19, 83, 80, 100, 89], [63, 20, 2, 90, 22], [81, 78, 72, 53, 21], [95, 39, 86, 85, 17], [32, 25, 36, 70, 56], [48, 4, 24, 96, 11], [19, 83, 80, 100, 89], [63, 20, 2, 90, 22], [81, 78, 72, 53, 21], [95, 39, 86, 85, 17], [32, 25, 36, 70, 56]];
+    var str = "Yuh-Jung Youn has become the first Korean actor to win an Academy Award She claimed the Oscar for best supporting actress Sunday night for her performance in Minari as a grandmother who moves from South Korea to live with her daughter's farming family in Arkansas. Youn said many throughout the world have badly botched the pronunciation of her name but tonight you are all forgiven";
 
-	calculateAverage(nums1);
-
-	function calculateAverage(x) {
-	   var sum = 0;
-	   var totalNums = 0;
-	   for(var i = 0; i < x.length; i++) {
-	       for(var j = 0; j < x[i].length; j++) {
-	           sum = sum + x[i][j];
-	           totalNums++
-	           var size = x.length - 1;
-	           if(size == i) {
-	              var average = sum / totalNums;
-	           }
+	countWordHer(str);
+	
+	function countWordHer(x) {
+	   var split = x.split(" ");
+	   var num = 0;
+	   
+	   for(var i=0; i<x.length; i++) {
+	       if(split[i] == "her") {
+	          num++;
 	       }
 	   }
-	   alert(average);
+	   alert(num);
 	}
 	
     </script>
