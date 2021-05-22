@@ -681,6 +681,22 @@
 				var average = sum / total;
 				alert(average);
 			}
+			
+			var str = "Yuh-Jung Youn has become the first Korean actor to win an Academy Award She claimed the Oscar for best supporting actress Sunday night for Her performance in Minari as a grandmother who moves from South Korea to live with hEr daughter's farming family in Arkansas. Youn said many throughout the world have badly botched the pronunciation of HER name but tonight you are all forgiven";
+			var count = 0;
+			var words = str.toLowerCase();
+			var words1 = words.split('');
+		
+			for(i=0; i<words1.length; i++) {
+	  			var j = i + 2;
+	 	   		var words2 = words.substring(i,j);
+	    
+	    		if(words2 == "he" || words2 == "eh") {
+	     			count++;
+	    			}
+			}
+			
+			alert(count);
 		</script>
 		
 		<table border=1>
